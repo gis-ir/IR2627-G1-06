@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="sFYZrKCNzJYY" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Paragraph]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-10-11</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[En este apartado se recoge la documentación aportada por la organización y las evidencias del contacto con el cliente.
+
+**DOC-001 Fotografías de las instalaciones**
+
+Fotografías de la sala de entrenamiento y de la recepción del gimnasio, cedidas por la organización.
+
+**DOC-002 Fotografía del personal**
+
+Fotografía de la plantilla del gimnasio en la recepción, encargada de la atención al cliente, la venta y el entrenamiento.
+
+**DOC-003 Fotografía del representante**
+
+Fotografía de Miguel Ángel Gil Granado en su puesto de trabajo, con la camiseta y la acreditación del gimnasio.
+
+**DOC-004 Productos a la venta en recepción**
+
+Fotografía de los productos fitness expuestos en recepción, objeto de la gestión de stock y facturación.
+
+**DOC-005 Herramienta de gestión actual**
+
+Fotografía del ordenador de recepción con la hoja de Excel usada actualmente para la facturación. Se han ocultado los datos personales de los clientes.
+
+**DOC-006 Perfil público de la organización**
+
+Perfil de Instagram del gimnasio, usado como fuente de información sobre sus servicios: https://www.instagram.com/puresportgym/]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
