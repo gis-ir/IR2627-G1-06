@@ -11,7 +11,22 @@
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[Anotación manual en hojas Excel de los ingresos por cuotas, entrenamientos y ventas.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[-Inicio: Se produce un cobro presencial en recepción por cuota, entrenamiento o producto.
+
+
+-El personal del gimnasio abre el archivo de hoja de cálculo en el ordenador de recepción. 
+
+
+-El personal navega hasta la pestaña correspondiente según el tipo de ingreso recibido.
+
+
+-El personal transcribe manualmente la fecha, el concepto, la identidad del cliente y el importe cobrado.
+
+
+-El personal guarda los cambios realizados en el archivo. 
+
+
+-Fin: Registro de la venta anotado manualmente en la hoja de cálculo. ]]></markdownProperty>
     <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">tbd</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
