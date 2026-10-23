@@ -6,12 +6,13 @@
       <number>012</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
-    <stringProperty name=":Proteus-name" category="general"><![CDATA[Gestión de clientes y perfiles]]></stringProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Recogida y gestión de opiniones y sugerencias 
+]]></stringProperty>
     <dateProperty name=":Proteus-date" category="general">2026-10-07</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[Registro y gestión de los clientes del gimnasio, diferenciando entre usuarios de instalaciones, clientes de entrenamiento personalizado y clientes externos.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[El cliente accede al módulo de reseñas desde la plataforma web y redacta un comentario, valoración o propuesta de mejora, pudiendo elegir si firma la reseña con su cuenta de usuario o la envía en modo anónimo. El administrador revisa periódicamente las entradas recibidas en el cuadro de mando para analizar la satisfacción del cliente y tomar decisiones de mejora en el centro. ]]></markdownProperty>
     <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">tbd</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
