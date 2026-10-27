@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="Gf4chpUHhB8Q" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 5]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El sistema registra el ticket/factura en el historial de ventas, emite el recibo/comprobante y actualiza la caja del día.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

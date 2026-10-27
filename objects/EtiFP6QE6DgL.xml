@@ -3,7 +3,7 @@
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
       <prefix><![CDATA[CU-]]></prefix>
-      <number>006</number>
+      <number>005</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Enviar valoración o sugerencia]]></stringProperty>
@@ -25,5 +25,12 @@
     </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
-  <children numbered="true"/>
+  <children numbered="true">
+    <child id="zPKk4TrAtHvi"/>
+    <child id="wiXvawGK7Ztq"/>
+    <child id="EZTkqRd9W2mN"/>
+    <child id="SokL4LFtvuUZ"/>
+    <child id="vg8Drtu7gEep"/>
+    <child id="QEfSiZGsaoDq"/>
+  </children>
 </object>

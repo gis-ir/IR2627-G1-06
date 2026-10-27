@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="vg8Drtu7gEep" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 5]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El sistema valida que el mensaje contenga texto y almacena la sugerencia en la base de datos asociada a la fecha y al usuario.7
+
+	E1: Formulario en blanco. El sistema detecta que el campo de texto está vacío. Impide el envío y solicita redactar el contenido.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

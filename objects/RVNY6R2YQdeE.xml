@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="RVNY6R2YQdeE" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 4]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El actor confirma el cobro de la transacción.
+
+	E1: Transacción rechazada por cobro con tarjeta. El sistema notifica la falla de comunicación con el datáfono/pasarela de pago y permite reintentar o cambiar la forma de pago.
+	]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

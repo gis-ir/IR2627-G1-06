@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="kPFBRuEnHxcK" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 2]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El usuario introduce su identificador (correo electrónico/usuario) y su contraseña.
+
+	E1: Credenciales incorrectas. Si el usuario o la clave son erróneos, el sistema muestra el mensaje "Usuario o contraseña incorrectos" sin dar pistas adicionales y no permite el acceso.
+
+	E2: Cuenta bloqueada o inactiva. Si el usuario está dado de baja o inhabilitado, el sistema muestra "Su cuenta se encuentra desactivada, contacte con recepción".]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

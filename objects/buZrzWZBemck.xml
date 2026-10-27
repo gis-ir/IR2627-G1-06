@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="buZrzWZBemck" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 3]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El actor selecciona la opción "Añadir Nuevo" o escoge un elemento de la lista para editar.
+
+	E1: Eliminación de cuota con socios asociados. Si se intenta eliminar una cuota activa usada por clientes, el sistema impide su borrado físico y sugiere cambiar su estado a "Descatalogada/Inactiva".]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

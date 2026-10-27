@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="BasjxuYWJncq" classes="use-case-step" acceptedChildren=":Proteus-none" acceptedParents="use-case">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PASO 3]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[El sistema comprueba que el usuario existe, su cuota está pagada/activa y no tiene impedimentos de acceso.
+
+	E1: Impago o Cuota Inactiva. El sistema detecta que el usuario tiene un recibo pendiente o su tarifa ha caducado. El sistema niega la apertura, emite una señal acústica/luminosa de acceso denegado y registra el intento fallido.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
