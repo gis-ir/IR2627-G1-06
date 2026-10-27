@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="WNKmLdJYARow" classes="software-requirement information-requirement" acceptedChildren="specific-data" acceptedParents=":Proteus-any">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[RQI-]]></prefix>
+      <number>001</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Información de Clientes y Perfiles]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-10-27</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá almacenar la información correspondiente a los clientes y sus perfiles. En concreto, los siguientes datos específicos:]]></markdownProperty>
+    <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">critical</enumProperty>
+    <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">tbd</enumProperty>
+    <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
+      <trace target="4KJTuEKKyk5q" traceType=":Proteus-dependency"/>
+      <trace target="3dkreG66BkDt" traceType=":Proteus-dependency"/>
+      <trace target="iY3EqFRNRcTN" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="bwJRyNwuBofT"/>
+    <child id="gyEFZQd9JVpU"/>
+    <child id="b6ncXzstUrBp"/>
+    <child id="8BMXDDVZgto6"/>
+    <child id="yTfkAxNL7B9s"/>
+    <child id="GcYpzNkSEHAh"/>
+    <child id="CtRVsFhjnBiW"/>
+    <child id="6M82N6hgJPEm"/>
+    <child id="WCKWiv4SdD5J"/>
+  </children>
+</object>
