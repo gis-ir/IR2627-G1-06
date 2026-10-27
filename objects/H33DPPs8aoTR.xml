@@ -3,7 +3,7 @@
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
       <prefix><![CDATA[CU-]]></prefix>
-      <number>007</number>
+      <number>006</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Gestionar permisos del sistema]]></stringProperty>
@@ -25,5 +25,13 @@
     </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
-  <children numbered="true"/>
+  <children numbered="true">
+    <child id="9fbXSkde2LAW"/>
+    <child id="UaVppcW4anU7"/>
+    <child id="g6avdESLH9Ba"/>
+    <child id="h6xUWpEGNeek"/>
+    <child id="gk6QhowPBqVY"/>
+    <child id="ujLwoynHnM8z"/>
+    <child id="FYMUsju6VVEg"/>
+  </children>
 </object>
