@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="5JYLbAT6y4rv" classes="use-case-action system-action" acceptedChildren=":Proteus-none" acceptedParents="use-case-exception">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Acción del sistema]]></stringProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[ deniega la entrada e indica "Aforo Completo" en la pantalla del torno.]]></markdownProperty>
+    <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

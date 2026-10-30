@@ -26,12 +26,5 @@
     </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
-  <children numbered="true">
-    <child id="D4siueqgMQwQ"/>
-    <child id="kPFBRuEnHxcK"/>
-    <child id="h9bh7SKFgGRw"/>
-    <child id="4yjxZH7hEtL8"/>
-    <child id="zHGWDc4tRHEq"/>
-    <child id="htnRsXMnznWr"/>
-  </children>
+  <children numbered="true"/>
 </object>
