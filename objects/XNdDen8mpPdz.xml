@@ -6,7 +6,7 @@
     <traceProperty name="actor" category="general" acceptedTargets="system-actor" traceType=":Proteus-dependency" maxTargetsNumber="1">
       <trace target="keTV9k8mSTJe" traceType=":Proteus-dependency"/>
     </traceProperty>
-    <markdownProperty name="description" category="general" tooltip="actor-action-description"><![CDATA[aproxima su credencial al lector del torno de acceso. ]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="actor-action-description"><![CDATA[presenta su credencial ante el dispositivo de control de acceso.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

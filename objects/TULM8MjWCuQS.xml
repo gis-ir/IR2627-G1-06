@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[actualiza de inmediato el registro de fichajes y el contador global de aforo de la sala.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[actualiza el registro de accesos y el cómputo del aforo.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

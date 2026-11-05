@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[valida que los campos obligatorios estén completos y que el DNI/NIF no esté duplicado en la base de datos.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[verifica la integridad de los datos requeridos y la unicidad del identificador del cliente.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
