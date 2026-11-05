@@ -6,7 +6,7 @@
     <traceProperty name="actor" category="general" acceptedTargets="system-actor" traceType=":Proteus-dependency" maxTargetsNumber="1">
       <trace target="keTV9k8mSTJe" traceType=":Proteus-dependency"/>
     </traceProperty>
-    <markdownProperty name="description" category="general" tooltip="actor-action-description"><![CDATA[ solicita al personal del gimnasio la compra de un producto o el pago de una cuota en la recepción.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="actor-action-description"><![CDATA[solicita la compra de un producto o el pago de una cuota al personal.]]></markdownProperty>
     <traceProperty name="secondary-actor" category="general" acceptedTargets="system-actor" traceType=":Proteus-dependency" maxTargetsNumber="1">
       <trace target="wqscetq65HrJ" traceType=":Proteus-dependency"/>
     </traceProperty>

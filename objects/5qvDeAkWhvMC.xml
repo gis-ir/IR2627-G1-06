@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="5qvDeAkWhvMC" classes="use-case-exception" acceptedChildren="use-case-action" acceptedParents="use-case-step">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[INCONSISTENCIA DE DATOS]]></stringProperty>
+    <markdownProperty name="condition" category="general" tooltip="exception-condition"><![CDATA[El sistema identifica campos obligatorios no informados o precios no válidos]]></markdownProperty>
+    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">failure-ending</enumProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="ueeSPg8TJane"/>
+  </children>
+</object>

@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[registra el ticket/factura en el historial de ventas, emite el comprobante y actualiza la caja del día.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[registra la transacción, genera el comprobante de venta y actualiza el balance de caja.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
