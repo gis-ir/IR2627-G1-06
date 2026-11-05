@@ -2,14 +2,14 @@
 <object id="824G9FbBBZ5e" classes="traceable-object figure" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[DIAGRAMA DE ARQUITECTURA DEL SISTEMA]]></stringProperty>
-    <dateProperty name=":Proteus-date" category="general">2026-11-02</dateProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-05</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[ARQUITECTUTRA DEL SIST (3).png]]></fileProperty>
+    <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[DIAGRAMA DE ARQUITECTURA LOGICA.png]]></fileProperty>
     <urlProperty name="url" category="detail"><![CDATA[]]></urlProperty>
-    <integerProperty name="width" category="detail" tooltip="width-info">100</integerProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[DIAGRAMA DE ARQUITECTURA DEL SISTEMA]]></markdownProperty>
+    <integerProperty name="width" category="detail" tooltip="width-info">80</integerProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Arquitectura lógica en tres capas del sistema de gestión de Pure Sport Gym, con sus subsistemas y los sistemas externos con los que se integra.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
