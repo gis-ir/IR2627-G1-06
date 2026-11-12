@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="dxYzpT2fiSMK" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[MODO DE PAGO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Efectivo, Tarjeta} (Obligatorio). Modalidad de pago utilizada.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

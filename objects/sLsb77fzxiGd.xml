@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="sLsb77fzxiGd" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PERMISOS]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Conjunto de valores booleanos por módulo {Clientes, TPV, Inventario, Aforo, Configuracion} (Obligatorio). Permisos concedidos a la cuenta.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

@@ -12,8 +12,8 @@
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[El sistema se comportará como se describe en el siguiente caso de uso cuando el personal necesite registrar a un nuevo cliente o editar sus datos.]]></markdownProperty>
-    <markdownProperty name="precondition" category="pre-post"><![CDATA[El actor ha iniciado sesión en el sistema con permisos de recepción o administración.]]></markdownProperty>
-    <markdownProperty name="postcondition" category="pre-post"><![CDATA[Los datos del cliente quedan guardados y actualizados en la base de datos con su perfil asignado.]]></markdownProperty>
+    <markdownProperty name="precondition" category="pre-post"><![CDATA[El actor ha iniciado sesión en el sistema con un perfil autorizado.]]></markdownProperty>
+    <markdownProperty name="postcondition" category="pre-post"><![CDATA[Los datos del cliente quedan guardados y actualizados en el sistema.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
     <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">tbd</enumProperty>
@@ -26,5 +26,13 @@
     </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
-  <children numbered="true"/>
+  <children numbered="true">
+    <child id="Yu6dsFzmX9ij"/>
+    <child id="xQoRDbTE6CBo"/>
+    <child id="hTJ2FTJCsrTu"/>
+    <child id="tva3CwsLanHq"/>
+    <child id="e4Qz67ZtzKQw"/>
+    <child id="HPLx8mzL7NU5"/>
+    <child id="n5g6nU4jE2Bm"/>
+  </children>
 </object>

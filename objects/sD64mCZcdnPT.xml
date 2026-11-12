@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="sD64mCZcdnPT" classes="use-case-exception" acceptedChildren="use-case-action" acceptedParents="use-case-step">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[(Impago o Cuota Inactiva)]]></stringProperty>
+    <markdownProperty name="condition" category="general" tooltip="exception-condition"><![CDATA[El usuario tiene un recibo pendiente o su tarifa se encuentra caducada. ]]></markdownProperty>
+    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">failure-ending</enumProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="x35dr2FJ8r7T"/>
+  </children>
+</object>

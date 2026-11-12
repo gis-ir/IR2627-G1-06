@@ -4,5 +4,12 @@
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Descripción de los diagramas de secuencia del sistema]]></stringProperty>
     <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
   </properties>
-  <children/>
+  <children>
+    <child id="13lWdcs14k5J"/>
+    <child id="2fjmOc1ON33I"/>
+    <child id="e713B7WhjNjA"/>
+    <child id="aW5tXpyhersN"/>
+    <child id="eggunRBqrPyU"/>
+    <child id="S2oFbaUmBxW7"/>
+  </children>
 </object>

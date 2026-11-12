@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="ew0a8wezykqa" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-05</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[**Fichaje**
+
+Representa cada lectura de una credencial en el torno de acceso, tanto si se permite el paso como si se deniega. Procede del requisito de información *Histórico de Accesos y Fichajes de Torno*.
+
+Atributos:
+
+* **lectura** (texto, obligatorio): código leído por el torno.
+* **fechaHora** (fecha y hora, obligatorio): instante de la lectura.
+* **movimiento** (TipoMovimiento, obligatorio): indica si es una entrada o una salida.
+* **autorizado** (booleano, obligatorio): indica si se ha permitido el paso.
+* **causaDenegacion** (texto, opcional): motivo del bloqueo, por ejemplo cuota impagada, aforo completo o tarjeta inactiva. Solo existe cuando autorizado es falso.
+
+Asociaciones:
+
+* Cliente **realiza** Fichaje (1): cliente al que corresponde la credencial leída.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

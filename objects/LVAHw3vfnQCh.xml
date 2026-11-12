@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="LVAHw3vfnQCh" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[IMPORTE UNITARIO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[
+Moneda (Obligatorio). Precio unitario registrado en el instante del cobro.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

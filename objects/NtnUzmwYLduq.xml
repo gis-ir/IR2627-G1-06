@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="NtnUzmwYLduq" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-04</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[**Pantalla Principal / Landing (Pública):**
+Vista inicial que recibe a los usuarios de la aplicación. Presenta una interfaz simplificada con dos botones principales y diferenciados: uno para el **PORTAL DE CLIENTES**, que invita a los usuarios a dejar una reseña o sugerencia, y otro para el **ÁREA DE PERSONAL**, que sirve de acceso al portal interno de administración.
+
+**Inicio de Sesión (Staff):**
+Pantalla de autenticación que permite a los empleados acceder a la plataforma mediante sus credenciales. Incluye el logotipo, campos para **Usuario o correo** (ej. `ejemplo@gmail.com`) y **Contraseña**, un botón azul destacado para **Iniciar sesión** y un enlace de recuperación de cuenta para garantizar un acceso seguro al sistema.
+
+**Doble Factor (Staff):**
+Módulo de verificación adicional para reforzar la seguridad del inicio de sesión del personal. Tras ingresar credenciales válidas, el usuario debe confirmar su identidad mediante un código enviado por correo o SMS, evitando accesos no autorizados incluso si las contraseñas son comprometidas.
+
+**Panel de Recepción (Staff):**
+El panel principal al que acceden los recepcionistas tras autenticarse. Proporciona una vista rápida de indicadores en tiempo real. Incluye el menú de navegación lateral completo.
+
+**Buzón de Sugerencias y Reseñas:**
+Formulario público donde los clientes o el público general pueden enviar mensajes de forma anónima o identificada. Permite seleccionar el tipo de mensaje (Sugerencia, Opinión, Queja/Incidencia), un campo de comentario libre, y un checkbox para el envío anónimo junto a una línea para dejar Nombre y Apellidos.
+
+**Punto de Venta (Cobro Presencial):**
+Interfaz de cobro para recepción. Permite buscar y añadir productos o suscripciones a un carrito de compra para procesar un pago presencial, seleccionando el método de pago (tarjeta, efectivo).
+
+**Listado de Ventas:**
+Panel administrativo que centraliza el registro histórico de todas las ventas y cobros procesados en el sistema. Permite filtrar y buscar por fecha, empleado vendedor, método de pago y tipo de producto o servicio vendido.
+
+**Ver Listado de Socios:**
+Panel administrativo que centraliza el registro de todos los socios del gimnasio. Muestra información en formato tabla: ID de Socio, Nombre, Apellidos, DNI, Email, Teléfono, Tipo de Plan de Membresía Actual y Estado (Activo/Inactivo/Impagado).
+
+**Ficha / Perfil Completo del Socio:**
+Vista detallada para un socio específico que muestra toda su información personal, histórico de membresías, histórico de ventas y estado de suscripción. Incluye botones de acción para **Editar Perfil**, **Renovar Membresía**, **Ver Historial**, o **Dar de Baja**.
+
+**Formulario para Alta de Socio:**
+Interfaz para registrar nuevos socios en el sistema. Recoge datos personales, información de contacto, DNI, y permite seleccionar el plan de membresía inicial, definiendo fechas y método de pago.
+
+**Membresías / Planes de Suscripción:**
+Módulo para la administración de los diferentes planes de membresía ofrecidos (ej: Mensual, Anual, Estudiante). Los responsables pueden crear, editar y dar de baja planes, gestionando precios, duraciones y beneficios asociados.
+
+**Aforo / Registro de Aforo:**
+Sección dedicada al seguimiento y control de la capacidad en tiempo real. Muestra el número actual de personas en las instalaciones y mantiene un registro cronológico de las últimas entradas y salidas registradas.
+
+**Inventario de Productos:**
+Módulo para la gestión del inventario de productos físicos (bebidas, suplementos, merchandising). Permite a los responsables planificar pedidos, registrar entradas de stock, actualizar precios y generar reportes de inventario.
+
+**Registro de Nuevo Producto:**
+Formulario para añadir nuevos productos al inventario del sistema. Recoge datos del producto, características técnicas, precio y asignación inicial de stock operativo.
+
+**Alertas:**
+Módulo para que los recepcionistas y personal de sala comuniquen incidencias o alertas en tiempo real sobre las instalaciones (ej: limpieza necesaria en una zona, maquinaria averiada, aforo excesivo). Las alertas quedan registradas.
+
+**Ver Listado de Usuarios (Admin):**
+Panel administrativo con todos los usuarios registrados en el sistema. Permite a los administradores buscar, filtrar y asignar roles específicos (ej: Administrador, Recepcionista, Entrenador Personal).
+
+**Página de Perfil:**
+Espacio donde cada usuario del personal puede visualizar su información personal, rol dentro del sistema y correo electrónico. Además, cuenta con la opción de acceder a la edición de sus datos.
+
+**Editar el Perfil:**
+Sección que permite modificar la información personal del usuario autenticado, como nombre, correo electrónico o imagen de perfil, manteniendo los datos actualizados.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

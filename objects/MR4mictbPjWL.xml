@@ -11,9 +11,9 @@
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[El sistema se comportará como se describe en el siguiente caso de uso cuando el personal proceda a cobrar una cuota o un producto en el mostrador.]]></markdownProperty>
-    <markdownProperty name="precondition" category="pre-post"><![CDATA[El actor ha iniciado sesión y existe al menos un producto o cuota dada de alta en el sistema.]]></markdownProperty>
-    <markdownProperty name="postcondition" category="pre-post"><![CDATA[La venta queda registrada en el historial centralizado y la caja se actualiza.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[El sistema procesa la venta de productos o el cobro de cuotas solicitadas por un cliente en el punto de atención.]]></markdownProperty>
+    <markdownProperty name="precondition" category="pre-post"><![CDATA[El actor ha iniciado sesión y existen productos o cuotas disponibles en el catálogo del sistema.]]></markdownProperty>
+    <markdownProperty name="postcondition" category="pre-post"><![CDATA[La venta queda registrada en el sistema y se actualizan el balance de caja y el inventario.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
     <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">tbd</enumProperty>
@@ -26,5 +26,12 @@
     </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
-  <children numbered="true"/>
+  <children numbered="true">
+    <child id="hDzv3gMwAfhu"/>
+    <child id="pWYYH6goKCiL"/>
+    <child id="XKr6wyd3v83P"/>
+    <child id="GffhNGPhh6tV"/>
+    <child id="e3T9WzRSb7oN"/>
+    <child id="dAPf2BYijw3H"/>
+  </children>
 </object>
