@@ -7,7 +7,7 @@
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="text" category="detail"><![CDATA[**Pantalla Principal / Landing (Pública):**
-Vista inicial que recibe a los usuarios de la aplicación. Presenta una interfaz simplificada con dos botones principales y diferenciados: uno para el **PORTAL DE CLIENTES**, que invita a los usuarios a dejar una reseña o sugerencia, y otro para el **ÁREA DE PERSONAL**, que sirve de acceso al portal interno de administración.
+Vista inicial que recibe a los usuarios de la aplicación. Presenta una interfaz simplificada con dos botones principales y diferenciados: uno para el **PORTAL DE CLIENTES**, que invita a los usuarios a dejar una reseña o sugerencia y consultar el catálogo de productos para planificar una posible compra presencial, y otro para el **ÁREA DE PERSONAL**, que sirve de acceso al portal interno de administración.
 
 **Inicio de Sesión (Staff):**
 Pantalla de autenticación que permite a los empleados acceder a la plataforma mediante sus credenciales. Incluye el logotipo, campos para **Usuario o correo** (ej. `ejemplo@gmail.com`) y **Contraseña**, un botón azul destacado para **Iniciar sesión** y un enlace de recuperación de cuenta para garantizar un acceso seguro al sistema.
@@ -33,8 +33,8 @@ Panel administrativo que centraliza el registro de todos los socios del gimnasio
 **Ficha / Perfil Completo del Socio:**
 Vista detallada para un socio específico que muestra toda su información personal, histórico de membresías, histórico de ventas y estado de suscripción. Incluye botones de acción para **Editar Perfil**, **Renovar Membresía**, **Ver Historial**, o **Dar de Baja**.
 
-**Formulario para Alta de Socio:**
-Interfaz para registrar nuevos socios en el sistema. Recoge datos personales, información de contacto, DNI, y permite seleccionar el plan de membresía inicial, definiendo fechas y método de pago.
+**Formulario para Registro de Nuevo Socio:**
+Interfaz para registrar nuevos socios en el sistema. Recoge datos personales y de contacto obligatorios (nombre, apellidos, DNI/NIE, teléfono móvil, correo electrónico) y opcionalmente la dirección. Incluye los botones de acción para Registrar Socio o Cancelar el proceso de registro.
 
 **Membresías / Planes de Suscripción:**
 Módulo para la administración de los diferentes planes de membresía ofrecidos (ej: Mensual, Anual, Estudiante). Los responsables pueden crear, editar y dar de baja planes, gestionando precios, duraciones y beneficios asociados.
@@ -58,7 +58,12 @@ Panel administrativo con todos los usuarios registrados en el sistema. Permite a
 Espacio donde cada usuario del personal puede visualizar su información personal, rol dentro del sistema y correo electrónico. Además, cuenta con la opción de acceder a la edición de sus datos.
 
 **Editar el Perfil:**
-Sección que permite modificar la información personal del usuario autenticado, como nombre, correo electrónico o imagen de perfil, manteniendo los datos actualizados.]]></markdownProperty>
+Sección que permite modificar la información personal del usuario autenticado, como nombre, correo electrónico o imagen de perfil, manteniendo los datos actualizados.
+
+**Catálogo de productos:** 
+Vista informativa accesible desde el portal de clientes que permite consultar en tiempo real el catálogo de productos físicos del gimnasio (suplementación, accesorios y bebidas), mostrando su precio y estado de disponibilidad (Disponible, Últimas unidades o Agotado). Cuenta con buscador y filtros por categoría, y está orientada exclusivamente a la planificación de compra presencial en recepción, sin pasarela de pago online. 
+
+]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
