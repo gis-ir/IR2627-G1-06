@@ -19,7 +19,7 @@ Atributos:
 Asociaciones:
 
 * Cliente **tieneAsignada** Rutina (1): cliente al que pertenece.
-* Empleado **elabora** Rutina (1): empleado que la ha elaborado.]]></markdownProperty>
+* Empleado **asigna** Rutina (1): empleado que la ha elaborado.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
