@@ -60,7 +60,7 @@ Espacio donde cada usuario del personal puede visualizar su información persona
 **Editar el Perfil:**
 Sección que permite modificar la información personal del usuario autenticado, como nombre, correo electrónico o imagen de perfil, manteniendo los datos actualizados.
 
-**Catálogo de productos:** 
+**Consulta del Catálogo de Productos:** 
 Vista informativa accesible desde el portal de clientes que permite consultar en tiempo real el catálogo de productos físicos del gimnasio (suplementación, accesorios y bebidas), mostrando su precio y estado de disponibilidad (Disponible, Últimas unidades o Agotado). Cuenta con buscador y filtros por categoría, y está orientada exclusivamente a la planificación de compra presencial en recepción, sin pasarela de pago online. 
 
 ]]></markdownProperty>
