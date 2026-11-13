@@ -13,7 +13,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <traceProperty name="inherits-from" category="detail" acceptedTargets="system-actor" traceType=":Proteus-dependency"/>
     <traceProperty name="participates-in" category="detail" acceptedTargets="use-case" traceType=":Proteus-dependency"/>
-    <markdownProperty name="description" category="detail"><![CDATA[Este actor representa un usuario del gimnasio que interactúa con el sistema de forma externa, exclusivamente para redactar y enviar reseñas o sugerencias asociadas a su cuenta.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Este actor representa un usuario del gimnasio que interactúa con el sistema para el acceso al portal online. Puede consultar la ocupación de la instalación en tiempo real, gestionar de forma sus reservas de clases y enviar reseñas o sugerencias de forma identificada o anónima. ]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency">
       <trace target="Wq4aHDPdqyYu" traceType=":Proteus-dependency"/>
       <trace target="Q6ofyw9nkjAm" traceType=":Proteus-dependency"/>
