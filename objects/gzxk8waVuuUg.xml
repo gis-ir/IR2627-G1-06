@@ -16,8 +16,11 @@
       <trace target="uEUL8XeL96rw" traceType=":Proteus-dependency"/>
       <trace target="7FL8hAcMduVD" traceType=":Proteus-dependency"/>
       <trace target="d3SgdJ6sNcWc" traceType=":Proteus-dependency"/>
+      <trace target="GWGkDm4RFQnL" traceType=":Proteus-dependency"/>
+      <trace target="xvNo3ZkCcDvq" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Cliente con cuota o servicio contratado en el gimnasio (usuario de instalaciones o cliente de entrenamiento personalizado). Accede a la plataforma para consultar la disponibilidad del catálogo de productos fitness en tiempo real antes de la compra presencial, verificar el servicio que tiene contratado y enviar reseñas o sugerencias (de forma identificada o anónima).
+Puede iniciar sesión en un portal web (validando su estado de cuota) para reservar recursos y consultar el aforo.
 
 ]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
