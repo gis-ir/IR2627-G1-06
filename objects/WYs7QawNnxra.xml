@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="WYs7QawNnxra" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[ESTADO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Activa, Finalizada} (Obligatorio). Vigencia de la rutina actual.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
