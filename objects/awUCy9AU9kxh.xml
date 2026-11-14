@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="awUCy9AU9kxh" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[FECHA EMISIÓN]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Fecha y Hora (Obligatorio). Momento exacto en el que el sistema detectó el stock mínimo.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

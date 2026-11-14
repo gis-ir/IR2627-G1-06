@@ -9,37 +9,51 @@
     <markdownProperty name="text" category="detail"><![CDATA[
 El sistema se organiza siguiendo una arquitectura cliente-servidor de tres capas. Esta división separa la interacción con los usuarios, la lógica del negocio y el almacenamiento de la información, de forma que cada parte puede desarrollarse y modificarse sin afectar a las demás.
 
+
 **1. Capa de presentación**
+
 
 Agrupa las interfaces a través de las cuales los actores interactúan con el sistema:
 
-* **Área de personal:** la utilizan el Administrador y el Personal/Staff. Da acceso a la gestión de clientes, las ventas en el TPV, el catálogo de productos y cuotas, el inventario y la consulta del aforo y las rutinas en sala. El Administrador accede además a la gestión de permisos y a la revisión de reseñas.
-* **Portal de clientes:** lo utilizan los clientes para enviar reseñas y sugerencias, de forma identificada o anónima.
+
+*   **Área de personal:** la utilizan el Administrador y el Personal/Staff. Da acceso a la gestión de clientes, las ventas en el TPV, el catálogo de productos y cuotas, el inventario, la consulta del aforo y las rutinas en sala, y la nueva gestión de alertas e incidencias en tiempo real. El Administrador accede además a la gestión de permisos y a la revisión de reseñas.
+*   **Portal de clientes:** lo utilizan los clientes para consultar el aforo en tiempo real, reservar recursos (clases, tatami, equipamiento), visualizar el catálogo y enviar reseñas y sugerencias, de forma identificada o anónima.
+
 
 Ninguna de las dos accede directamente a los datos: todas sus peticiones pasan por la capa de lógica de negocio.
 
+
 **2. Capa de lógica de negocio**
+
 
 Contiene los subsistemas definidos en la especificación de requisitos, que son los encargados de aplicar las reglas de negocio:
 
-* **Subsistema de gestión de usuarios y clientes:** datos de los clientes, su perfil y el estado de su cuota.
-* **Subsistema de punto de venta (TPV) e inventario:** catálogo de productos y cuotas, registro de las ventas, descuento automático del stock, avisos de stock mínimo y peticiones de reposición.
-* **Subsistema de control de acceso y aforo en sala:** registro de los fichajes del torno, comprobación de la cuota y del aforo antes de permitir el paso, y consulta de los usuarios presentes en sala y de sus rutinas.
-* **Subsistema de valoraciones y sugerencias:** recogida de las reseñas y su revisión por parte del Administrador.
+
+*   **Subsistema de gestión de usuarios y clientes:** datos de los clientes, su perfil y el estado de su cuota.
+*   **Subsistema de punto de venta (TPV) e inventario:** catálogo de productos y cuotas, registro de las ventas, descuento automático del stock, avisos de stock mínimo y peticiones de reposición.
+*   **Subsistema de control de acceso y aforo en sala:** registro de los fichajes del torno, comprobación de la cuota y del aforo antes de permitir el paso, y consulta de los usuarios presentes en sala y de sus rutinas.
+*   **Subsistema de valoraciones y sugerencias:** recogida de las reseñas y su revisión por parte del Administrador.
+*   **Subsistema de reservas:** control de disponibilidad, aforo máximo por recurso y prevención de colisiones en las reservas del portal.
+*   **Subsistema de alertas e incidencias:** registro y seguimiento de estados (pendiente, en curso, resuelta) de averías, limpieza y mantenimiento interno.
+
 
 Todos los subsistemas se apoyan en un componente común de **seguridad**, que autentica a los usuarios y comprueba que el rol de cada uno tiene permiso para la operación que solicita.
 
+
 **3. Capa de datos**
 
-Una única base de datos centralizada almacena toda la información del sistema: clientes, rutinas, productos, ventas, fichajes, peticiones de reposición, reseñas y cuentas de usuario. Solo la capa de lógica de negocio accede a ella, lo que garantiza que la información se mantenga íntegra, consistente y sin duplicados.
+
+Una única base de datos centralizada almacena toda la información del sistema: clientes, rutinas, productos, ventas, fichajes, peticiones de reposición, reseñas, cuentas de usuario, recursos reservables, historial de reservas y registro de incidencias internas. Solo la capa de lógica de negocio accede a ella, lo que garantiza que la información se mantenga íntegra, consistente y sin duplicados.
+
 
 **4. Sistemas externos**
 
+
 El sistema se integra con el hardware que ya dispone el gimnasio:
 
-* **Torno de acceso:** envía al subsistema de control de acceso la lectura de la credencial del cliente y recibe la orden de permitir o denegar el paso.
-* **Datáfono:** recibe del subsistema de punto de venta el importe de los cobros con tarjeta y le devuelve si el pago se ha aceptado o rechazado.
-]]></markdownProperty>
+
+*   **Torno de acceso:** envía al subsistema de control de acceso la lectura de la credencial del cliente y recibe la orden de permitir o denegar el paso.
+*   **Datáfono:** recibe del subsistema de punto de venta el importe de los cobros con tarjeta y le devuelve si el pago se ha aceptado o rechazado.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
