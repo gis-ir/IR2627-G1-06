@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="KZS83yQUVqtd" classes="software-requirement business-rule" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[REGN-]]></prefix>
+      <number>008</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Disponibilidad y control de solapamiento de reservas]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-16</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="description" category="detail"><![CDATA[Solo pueden reservarse recursos (RecursoReservable) cuyo estado sea DISPONIBLE, quedando excluidos los recursos en estado INACTIVO. Para recursos de tipo EQUIPAMIENTO_EXCLUSIVO, el sistema impedirá confirmar dos reservas (estado = CONFIRMADA) sobre el mismo recurso en franjas horarias solapadas (horaInicio - horaFin). Para recursos de tipo ESPACIO_COMPARTIDO o CLASE_DIRIGIDA, el número total de reservas confirmadas coincidentes en una misma fecha y franja horaria no podrá superar el aforoMaximo del recurso.]]></markdownProperty>
+    <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
+    <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">high</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">validated</enumProperty>
+    <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">high</enumProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
+      <trace target="jhEm4fTFAqwM" traceType=":Proteus-dependency"/>
+      <trace target="BLvj5mKB59Wx" traceType=":Proteus-dependency"/>
+      <trace target="gfcoZaddFQGM" traceType=":Proteus-dependency"/>
+      <trace target="DdbKhC3sSNtT" traceType=":Proteus-dependency"/>
+      <trace target="2rNX2KBDSiHa" traceType=":Proteus-dependency"/>
+      <trace target="NHBcXzHzBfii" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
