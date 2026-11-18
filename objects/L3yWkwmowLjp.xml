@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="L3yWkwmowLjp" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[MOTIVO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Texto libre (Opcional). Causa del ajuste (rotura, caducidad o recuento).]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

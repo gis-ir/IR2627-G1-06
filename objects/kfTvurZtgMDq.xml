@@ -2,7 +2,7 @@
 <object id="kfTvurZtgMDq" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[CATEGORÍA]]></stringProperty>
-    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Nutrición, Suplementación, Accesorios, Cuota/Suscripción} (Obligatorio). Clasificación del ítem.]]></markdownProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Suplementos, Bebidas, Accesorios} (Obligatorio). Clasificación del producto.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

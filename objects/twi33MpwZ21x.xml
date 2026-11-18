@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="twi33MpwZ21x" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[AVISO FUERA DE SERVICIO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Booleano (Obligatorio). Indica si el equipo afectado está fuera de servicio y debe avisarse en recepción.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

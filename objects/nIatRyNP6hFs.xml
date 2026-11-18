@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="nIatRyNP6hFs" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[**Gestionar cuentas del personal**
+
+El Administrador accede a la gestión de usuarios y el sistema le muestra las cuentas del personal con su rol, sus módulos y su último acceso. El Administrador elige entre crear una cuenta o editar una existente e indica los datos identificativos, el correo corporativo, el cargo y el rol; en una cuenta existente también puede restablecer la contraseña, cerrar sus sesiones o activarla y desactivarla. Antes de guardar, el sistema comprueba los datos obligatorios, que el DNI y el correo no pertenezcan a otra cuenta y que no se desactive al último administrador activo.
+
+Operaciones del sistema:
+
+* **obtenerCuentas():** devuelve las cuentas de usuario del personal. Es una consulta: no modifica el estado del sistema.
+* **guardarCuenta(datos):** crea una cuenta o actualiza una existente. Precondición: todos los datos obligatorios están indicados, el DNI y el correo corporativo no pertenecen a otra cuenta y, si se desactiva, queda al menos un administrador activo. Postcondición: la cuenta queda guardada con su rol y su estado; si es nueva, tiene una contraseña temporal.
+* **restablecerContrasena(nombreUsuario):** genera una contraseña temporal. Precondición: existe una cuenta con ese nombre de usuario. Postcondición: la cuenta tiene una nueva contraseña temporal y sus sesiones activas quedan cerradas.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

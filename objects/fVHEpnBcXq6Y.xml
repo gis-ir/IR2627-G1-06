@@ -2,7 +2,7 @@
 <object id="fVHEpnBcXq6Y" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[CATEGORÍA]]></stringProperty>
-    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Sugerencia, Queja, Valoracion general} (Obligatorio). Clasificación de la entrada.]]></markdownProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Reseña/Valoración, Sugerencia, Queja/Incidencia} (Obligatorio). Clasificación de la entrada.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="zdEAyKIYOfjd" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[SESIONES RESTANTES]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Número entero (Opcional). Sesiones que le quedan al cliente en un pack de sesiones.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

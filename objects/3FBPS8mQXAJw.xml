@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="3FBPS8mQXAJw" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[FECHA DE INICIO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Fecha (Obligatorio). Día en el que entra en vigor la suscripción.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
