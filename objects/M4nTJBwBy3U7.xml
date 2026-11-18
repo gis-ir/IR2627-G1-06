@@ -2,7 +2,7 @@
 <object id="M4nTJBwBy3U7" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[IVA]]></stringProperty>
-    <markdownProperty name="description" category="general"><![CDATA[Porcentaje (Obligatorio). Tipo impositivo aplicable.]]></markdownProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Porcentaje (Obligatorio). Tipo impositivo aplicable, que permite desglosar la base imponible del PVP.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

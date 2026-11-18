@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="OcnC7nF7F61k" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[ACTIVO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Booleano (Obligatorio). Es falso cuando el plan se ha dado de baja y ya no puede contratarse.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

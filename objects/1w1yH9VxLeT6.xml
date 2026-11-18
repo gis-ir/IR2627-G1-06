@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="1w1yH9VxLeT6" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[UBICACIÓN]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Cadena de texto (Obligatorio). Lugar de las instalaciones donde se encuentra el recurso.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

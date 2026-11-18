@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="wGSQs0gvcqQk" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[EMAIL DE CONTACTO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Cadena de texto (Opcional). Correo de contacto del remitente, para poder responderle.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

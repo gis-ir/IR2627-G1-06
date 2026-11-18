@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="76GFd6DxK9hf" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[ID EMPLEADO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Referencia a ID_Usuario (Obligatorio). Empleado que registra el movimiento.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="N1qemZk96fdR" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[**Registrar entrada o ajuste de stock**
+
+El Personal/Staff selecciona un producto del inventario e indica el tipo de movimiento (entrada de proveedor o ajuste manual) y la cantidad, junto con el albarán o el motivo según el caso. El sistema comprueba que el stock resultante no sea negativo, actualiza el stock del producto y registra el movimiento. Si el stock supera el mínimo, cierra la alerta de reposición del producto.
+
+Operaciones del sistema:
+
+* **registrarMovimiento(codigoProducto, tipo, cantidad, numeroAlbaran, costeUnitarioCompra, motivo):** actualiza el stock de un producto. Precondición: el producto existe y el stock resultante no es negativo. Postcondición: existe un nuevo movimiento de stock con su fecha y el empleado que lo registra, y el stock del producto queda actualizado; si supera el stock mínimo, su alerta de reposición pasa a resuelta.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

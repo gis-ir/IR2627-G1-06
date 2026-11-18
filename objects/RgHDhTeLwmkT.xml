@@ -2,7 +2,7 @@
 <object id="RgHDhTeLwmkT" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[MÓDULO]]></stringProperty>
-    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Clientes, TPV, Inventario, Aforo, Configuracion} (Obligatorio). Módulo del sistema.]]></markdownProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Dashboard de Dirección, Gestión de Usuarios, Recursos y Espacios, Tarifas y Planes, TPV y Ventas, Gestión de Socios, Inventario y Stock, Alertas e Incidencias} (Obligatorio). Módulo del sistema.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

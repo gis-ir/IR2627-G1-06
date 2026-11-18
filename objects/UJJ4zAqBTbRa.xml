@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[inscribe la reserva vinculando el ID del cliente con el recurso y el tramo horario, reduciendo las plazas disponibles.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[inscribe la reserva vinculando el ID del cliente con el recurso y el tramo horario, reduciendo las plazas disponibles; la deja confirmada si el recurso es gratuito o pendiente de pago (en recepción) si tiene tarifa.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
