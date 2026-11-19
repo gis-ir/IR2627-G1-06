@@ -8,7 +8,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[DiagramaFinal.drawio.png]]></fileProperty>
     <urlProperty name="url" category="detail"><![CDATA[]]></urlProperty>
-    <integerProperty name="width" category="detail" tooltip="width-info">90</integerProperty>
+    <integerProperty name="width" category="detail" tooltip="width-info">60</integerProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Diagrama de clases ]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
