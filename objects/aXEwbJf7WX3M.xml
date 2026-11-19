@@ -2,7 +2,7 @@
 <object id="aXEwbJf7WX3M" classes="use-case-step use-case-action actor-action actor-system-action actor-system-step" acceptedChildren="use-case-exception" acceptedParents="use-case conditional-branch">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso actor-sistema]]></stringProperty>
-    <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[Si el usuario es personal del gimnasio (Administrador o Personal/Staff).]]></markdownProperty>
+    <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[el usuario es personal del gimnasio (Administrador o Personal/Staff).]]></markdownProperty>
     <traceProperty name="actor" category="general" acceptedTargets="system-actor" traceType=":Proteus-dependency" maxTargetsNumber="1">
       <trace target="wqscetq65HrJ" traceType=":Proteus-dependency"/>
     </traceProperty>

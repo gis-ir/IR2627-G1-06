@@ -8,7 +8,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="text" category="detail"><![CDATA[# 3.2 Descripción de las clases del sistema
 
-## Cliente
+## `Cliente`
 Representa a cada persona que mantiene una relación con el gimnasio, tanto si contrata un plan de suscripción o un pack de sesiones como si solo compra productos. El tipo de servicio al que accede se deduce del plan que tiene en vigor. Procede del requisito de información *Información de Clientes*.
 
 **Atributos:**
@@ -55,7 +55,7 @@ Representa a cada persona que mantiene una relación con el gimnasio, tanto si c
 
 ---
 
-## PlanMembresia
+## `PlanMembresia`
 Representa cada tarifa que el gimnasio ofrece a sus clientes, ya sea un plan de suscripción periódico o un pack de sesiones de prepago. Procede del requisito de información *Información de Planes de Membresía*.
 
 **Atributos:**
@@ -66,7 +66,7 @@ Representa cada tarifa que el gimnasio ofrece a sus clientes, ya sea un plan de 
 
 - `modalidadPago` (ModalidadPago, obligatorio): forma en la que se cobra la tarifa.
 
-- `precio` (moneda, obligatorio): precio de la tarifa con el IVA incluido.
+- `precio` (moneda, obligatorio): precio de la tarifa con el IVA general (21 %) incluido.
 
 - `duracionMeses` (número entero positivo, opcional): duración de los planes periódicos.
 
@@ -88,7 +88,7 @@ Representa cada tarifa que el gimnasio ofrece a sus clientes, ya sea un plan de 
 
 ---
 
-## Suscripcion
+## `Suscripcion`
 Representa cada contratación de un plan o de un pack por parte de un cliente durante un periodo concreto. El conjunto de suscripciones de un cliente forma su historial de cuotas. Procede del requisito de información *Información de Suscripciones*.
 
 **Atributos:**
@@ -113,7 +113,7 @@ Representa cada contratación de un plan o de un pack por parte de un cliente du
 
 ---
 
-## Fichaje
+## `Fichaje`
 Representa cada lectura de una credencial en el torno de acceso, tanto si se permite el paso como si se deniega. Procede del requisito de información *Histórico de Accesos*.
 
 **Atributos:**
@@ -137,12 +137,14 @@ Representa cada lectura de una credencial en el torno de acceso, tanto si se per
 
 ---
 
-## Rutina
+## `Rutina`
 Representa la rutina de entrenamiento que el personal del gimnasio elabora y asigna a un cliente. Permite saber qué usuarios presentes en sala disponen de una rutina proporcionada por el centro. Procede del requisito de información *Información de Rutina de Entrenamiento*.
 
 **Atributos:**
 
-- `nombreRutina` (texto, obligatorio): identificador 
+- `codigoRutina` (número entero, obligatorio, único): identificador de la rutina.
+
+- `nombreRutina` (texto, obligatorio): nombre de la rutina
 
 - `descripcionRutina` (texto obligatorio):  breve descripción del plan (ej. "Hipertrofia 4 días").
 
@@ -158,7 +160,7 @@ Representa la rutina de entrenamiento que el personal del gimnasio elabora y asi
 
 ---
 
-## Empleado
+## `Empleado`
 Representa la cuenta de usuario de cada miembro del personal del gimnasio, incluido el administrador, con la que accede al sistema. Procede del requisito de información *Cuentas de Usuario* e *Información Permisos de Usuario*.
 
 **Atributos:**
@@ -203,7 +205,7 @@ Representa la cuenta de usuario de cada miembro del personal del gimnasio, inclu
 
 ---
 
-## Venta
+## `Venta`
 Representa cada cobro realizado en el TPV de la recepción, ya sea de productos, de planes de suscripción o de reservas. Procede del requisito de información *Información de Venta*.
 
 **Atributos:**
@@ -231,7 +233,7 @@ la venta.
 
 ---
 
-## LineaVenta
+## `LineaVenta`
 Representa el desglose de cada producto, suscripción o reserva incluido en una venta. Procede del requisito de información *Información línea de venta*.
 
 **Atributos:**
@@ -242,7 +244,7 @@ Representa el desglose de cada producto, suscripción o reserva incluido en una 
 
 - `concepto` (texto, obligatorio): descripción de la línea tal y como aparece en el ticket.
 
-- `/baseImponible` (moneda, derivado): importe de la línea sin IVA. Se obtiene descontando el IVA aplicable a `unidades` por `importeUnitario`.
+- `/baseImponible` (moneda, derivado): importe de la línea sin IVA. Se obtiene descontando el IVA aplicable a `unidades` por `importeUnitario`: el `iva` del producto o, en planes y reservas, el general del 21 %.
 
 - `/cuotaIva` (moneda, derivado): IVA incluido en el importe de la línea.
 
@@ -260,7 +262,7 @@ Estas tres asociaciones son excluyentes ({xor}): cada línea corresponde a un ú
 
 ---
 
-## Producto
+## `Producto`
 Representa cada artículo del catálogo comercial que se vende en la recepción. Las tarifas de acceso al gimnasio no son productos: se describen en la clase `PlanMembresia`. Procede del requisito de información *Información de Productos*.
 
 **Atributos:**
@@ -275,7 +277,7 @@ Representa cada artículo del catálogo comercial que se vende en la recepción.
 
 - `iva` (porcentaje, obligatorio): tipo impositivo aplicable, que permite desglosar la base imponible del `pvp`.
 
-- `costeUnitario` (moneda, obligatorio): coste de compra del producto sin IVA, necesario para calcular el margen bruto.
+- `costeUnitario` (moneda, opcional): coste de compra del producto sin IVA, necesario para calcular el margen bruto.
 
 - `stockActual` (número entero, obligatorio): unidades disponibles en recepción.
 
@@ -301,7 +303,7 @@ Representa cada artículo del catálogo comercial que se vende en la recepción.
 
 ---
 
-## MovimientoStock
+## `MovimientoStock`
 Representa cada entrada de mercancía de un proveedor y cada ajuste manual del stock de un producto, de modo que se pueda saber de dónde procede cada variación. Procede del requisito de información *Información de Movimientos de Stock*.
 
 **Atributos:**
@@ -326,7 +328,7 @@ Representa cada entrada de mercancía de un proveedor y cada ajuste manual del s
 
 ---
 
-## AlertaReposicion 
+## `AlertaReposicion`
 Representa cada aviso automático generado cuando un producto alcanza su stock mínimo. Procede del requisito de información *Información de Alertas de Reposición*.
 
 **Atributos:**
@@ -343,7 +345,7 @@ Representa cada aviso automático generado cuando un producto alcanza su stock m
 
 ---
 
-## Reseña
+## `Reseña`
 Representa cada opinión, queja o sugerencia que un cliente envía al gimnasio a través del portal, de forma identificada o anónima, así como la respuesta que da la Dirección. Procede del requisito de información *Reseñas*.
 
 **Atributos:**
@@ -352,7 +354,7 @@ Representa cada opinión, queja o sugerencia que un cliente envía al gimnasio a
 
 - `valoracion` (texto libre, obligatorio): contenido del mensaje.
 
-- `puntuacion` (número entero entre 1 y 5, opcional): estrellas otorgadas. Solo se indica en las reseñas o valoraciones, no en las sugerencias ni en las quejas.
+- `puntuacion` (número entero entre 1 y 5, opcional): estrellas otorgadas. Es obligatoria en las reseñas o valoraciones y no se indica en las sugerencias ni en las quejas.
 
 - `fechaHora` (fecha y hora, obligatorio): momento en el que se recibe.
 
@@ -378,7 +380,7 @@ Representa cada opinión, queja o sugerencia que un cliente envía al gimnasio a
 
 ---
 
-## RecursoReservable 
+## `RecursoReservable`
 Representa los espacios compartidos (tatami, clases) o equipamiento exclusivo (racks, tarimas) que los clientes pueden reservar. Procede del requisito de información *Información de Recurso Reservable*.
 
 **Atributos:**
@@ -407,9 +409,11 @@ Representa los espacios compartidos (tatami, clases) o equipamiento exclusivo (r
 
 - `Reserva asignadaA RecursoReservable (0..*)`: historial de reservas asociadas a este recurso.
 
+- `Incidencia afectaA RecursoReservable (0..*)`: incidencias que han afectado a este recurso.
+
 ---
 
-## Reserva 
+## `Reserva`
 Representa las reservas efectuadas por los clientes desde el portal. Procede del requisito de información *Información de Reserva*.
 
 **Atributos:**
@@ -438,14 +442,16 @@ Representa las reservas efectuadas por los clientes desde el portal. Procede del
 
 ---
 
-## Incidencia 
+## `Incidencia`
 Representa los avisos de averías, limpieza o mantenimiento reportados por el personal para su seguimiento interno. Procede del requisito de información *Información de Incidencias y Mantenimiento*.
 
 **Atributos:**
 
 - `tipo` (TipoIncidencia, obligatorio): categoría del problema.
 
-- `tituloEquipo` (texto, obligatorio): equipo o elemento afectado, por ejemplo "Cinta de correr #04".
+- `zona` (texto, obligatorio): zona de las instalaciones donde se produce, por ejemplo "Zona Cardio" o "Vestuario Masculino".
+
+- `tituloEquipo` (texto, opcional): equipo o elemento afectado, por ejemplo "Cinta de correr #04".
 
 - `descripcion` (texto, obligatorio): explicación detallada de la avería o necesidad.
 
@@ -464,6 +470,8 @@ Representa los avisos de averías, limpieza o mantenimiento reportados por el pe
 - `Empleado reporta Incidencia (1)`: trabajador que da de alta el aviso.
 
 - `Empleado resuelve Incidencia (0..1)`: trabajador que se encarga de solucionarla.
+
+- `afectaA RecursoReservable (0..1)`: recurso reservable afectado por la incidencia, si lo hay. Cuando es una avería, el recurso pasa a estar inactivo hasta que se resuelva.
 
 ---
 

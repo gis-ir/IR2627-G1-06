@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="1hAOk55St1Wm" classes="use-case-exception" acceptedChildren="use-case-action" acceptedParents="use-case-step">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[(Secuencia de fichaje no válida)]]></stringProperty>
+    <markdownProperty name="condition" category="general" tooltip="exception-condition"><![CDATA[Se intenta una entrada de un cliente que ya figura dentro de la sala o una salida sin una entrada previa.]]></markdownProperty>
+    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">failure-ending</enumProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="zRAiSj44cSAA"/>
+  </children>
+</object>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="DIlWp0RZJeNe" classes="use-case-exception" acceptedChildren="use-case-action" acceptedParents="use-case-step">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[(Puntuación sin indicar)]]></stringProperty>
+    <markdownProperty name="condition" category="general" tooltip="exception-condition"><![CDATA[La categoría es reseña o valoración y no se ha indicado la puntuación de 1 a 5 estrellas.]]></markdownProperty>
+    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">failure-ending</enumProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="qNHeVThjyL5w"/>
+  </children>
+</object>

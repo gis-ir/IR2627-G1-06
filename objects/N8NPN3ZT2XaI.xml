@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[(Código incorrecto o caducado)]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="exception-condition"><![CDATA[El código introducido no es el enviado o ha superado su tiempo de validez.]]></markdownProperty>
-    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">failure-ending</enumProperty>
+    <enumProperty name="termination" category="general" tooltip="exception-termination" choices="resumes failure-ending">resumes</enumProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children>

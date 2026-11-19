@@ -2,7 +2,7 @@
 <object id="SUD0LLPvsCb1" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[PUNTUACIÓN]]></stringProperty>
-    <markdownProperty name="description" category="general"><![CDATA[Número entero entre 1 y 5 (Opcional). Estrellas otorgadas; solo se indica en las reseñas o valoraciones.]]></markdownProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Número entero entre 1 y 5 (Condicional). Estrellas otorgadas; es obligatorio en las reseñas o valoraciones y queda vacío en las demás categorías.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

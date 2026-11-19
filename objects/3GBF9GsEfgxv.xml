@@ -3,12 +3,13 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[valida la existencia del cliente, que su suscripción esté en vigor (cuota activa o por vencer) y el límite de aforo permitido.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[valida la existencia del cliente y, en las entradas, que su suscripción esté en vigor (cuota activa o por vencer) y que no se haya alcanzado el aforo máximo; en las salidas, que el cliente figure dentro de la sala.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children>
     <child id="sD64mCZcdnPT"/>
     <child id="DJhoQb5x7VJ3"/>
+    <child id="1hAOk55St1Wm"/>
   </children>
 </object>
