@@ -7,11 +7,11 @@
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Acceso al portal web del cliente]]></stringProperty>
-    <dateProperty name=":Proteus-date" category="general">2026-11-16</dateProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[Todo cliente registrado debe disponer obligatoriamente de un correo electrónico (email) y una contraseña (contrasena) válidos para autenticarse en el Portal Web de Socios y acceder a sus funcionalidades (consulta de estado de cuota, aforo en tiempo real, rutinas y gestión de reservas). El acceso al sistema interno de gestión queda restringido exclusivamente al personal autorizado.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Todo cliente que vaya a usar el Portal Web de Socios debe disponer obligatoriamente de un correo electrónico (email) y una contraseña (contrasena) válidos para autenticarse en él y acceder a sus funcionalidades (consulta de estado de cuota, aforo en tiempo real, rutinas y gestión de reservas). El acceso al sistema interno de gestión queda restringido exclusivamente al personal autorizado.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">high</enumProperty>
     <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">validated</enumProperty>

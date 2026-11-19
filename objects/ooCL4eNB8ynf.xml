@@ -23,7 +23,9 @@ Representa a cada persona que mantiene una relación con el gimnasio, tanto si c
 
 - `telefono` (texto de 9 dígitos, obligatorio): teléfono de contacto.
 
-- `email` (texto, opcional): correo electrónico de contacto.
+- `email` (texto, opcional): correo electrónico de contacto. Es obligatorio si el cliente accede al portal.
+
+- `contrasena` (texto cifrado, opcional): clave de acceso al portal del cliente. Es obligatoria si el cliente accede al portal.
 
 - `fechaNacimiento` (fecha, obligatorio): fecha de nacimiento del cliente.
 
@@ -100,8 +102,6 @@ Representa cada contratación de un plan o de un pack por parte de un cliente du
 - `sesionesRestantes` (número entero, opcional): sesiones que le quedan al cliente en un pack de sesiones.
 
 - `estado` (EstadoCuota, obligatorio): situación de la cuota (Activa, Por vencer, Vencida o Inactiva).
-
-- `renovacionAutomatica` (booleano, obligatorio): es verdadero cuando la suscripción se renueva sola al vencer.
 
 **Asociaciones:**
 
