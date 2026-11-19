@@ -11,7 +11,7 @@
 El atributo estado de la clase Suscripcion determina si el cliente puede acceder a las instalaciones. El atributo derivado estadoCuota de la clase Cliente toma el valor de su suscripción más reciente:
 
 * **Activa:** la suscripción está en vigor. Es el estado en el que queda al cobrarse el plan o el pack en el TPV.
-* **Por vencer:** la suscripción sigue en vigor, pero se acerca su fecha de vencimiento. El cliente conserva el acceso a las instalaciones.
+* **Por vencer:** la suscripción sigue en vigor, pero faltan 7 días o menos para su fecha de vencimiento. El cliente conserva el acceso a las instalaciones.
 * **Vencida:** ha llegado la fecha de vencimiento (o se han agotado las sesiones de un pack) sin que se haya renovado. Vuelve a estar activa cuando se registra el cobro de una nueva suscripción.
 * **Inactiva:** el centro ha dado de baja al socio. Vuelve a estar activa si se reactiva al socio y se cobra una nueva suscripción.
 

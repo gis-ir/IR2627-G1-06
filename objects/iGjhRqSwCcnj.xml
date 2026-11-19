@@ -3,11 +3,12 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[valida que el campo de texto no esté vacío y almacena la sugerencia con fecha y hora.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[valida que el campo de texto no esté vacío y, si la categoría es reseña o valoración, que se haya indicado la puntuación, y almacena el mensaje con su fecha y hora.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children>
     <child id="6dtQ6JCEBVnE"/>
+    <child id="DIlWp0RZJeNe"/>
   </children>
 </object>

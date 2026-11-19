@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="mSPjSY5u7eOm" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[El sistema se integrará con dos dispositivos que el gimnasio ya tiene:
+
+* **Torno de acceso:** envía al sistema la lectura de la credencial del cliente (pulsera RFID o pase QR) y recibe la orden de permitir o denegar el paso.
+* **Datáfono:** recibe del sistema el importe de los cobros con tarjeta y le devuelve si el pago se ha aceptado o rechazado.
+
+El sistema no se integra con ninguna pasarela de pago online ni con servicios bancarios, ya que quedan fuera del alcance del proyecto.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

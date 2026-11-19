@@ -12,7 +12,7 @@ El Cliente indica la categoría y el contenido de su reseña (y la puntuación, 
 
 Operaciones del sistema:
 
-* **enviarReseña(categoria, valoracion, puntuacion, esAnonima):** registra una nueva reseña. Precondición: el comentario no está vacío y, si se indica puntuación, está entre 1 y 5. Postcondición: existe una nueva reseña con su fecha y hora; si no es anónima, queda asociada al cliente que la envía.]]></markdownProperty>
+* **enviarReseña(categoria, valoracion, puntuacion, nombreOpcional, emailContacto, esAnonima):** registra una nueva reseña. Precondición: el comentario no está vacío y, si la categoría es reseña o valoración, se ha indicado una puntuación entre 1 y 5. Postcondición: existe una nueva reseña con su fecha y hora; si no es anónima, queda asociada al cliente que la envía.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

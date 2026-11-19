@@ -13,7 +13,7 @@ El Personal/Staff accede al módulo y el sistema le muestra las incidencias abie
 Operaciones del sistema:
 
 * **obtenerIncidencias():** devuelve las incidencias abiertas y las alertas de reposición. Es una consulta: no modifica el estado del sistema.
-* **registrarIncidencia(tipo, tituloEquipo, descripcion):** da de alta una incidencia. Precondición: todos los datos obligatorios están indicados. Postcondición: existe una nueva incidencia pendiente, con su fecha y el empleado que la reporta.
+* **registrarIncidencia(tipo, zona, tituloEquipo, descripcion):** da de alta una incidencia. Precondición: todos los datos obligatorios están indicados. Postcondición: existe una nueva incidencia pendiente, con su fecha y el empleado que la reporta.
 * **actualizarIncidencia(codigo, estado, notasSeguimiento, avisoFueraServicio):** cambia el estado de una incidencia. Precondición: la incidencia existe y no está resuelta. Postcondición: la incidencia tiene el nuevo estado y las notas indicadas; si pasa a resuelta, queda registrada su fecha de resolución y el empleado que la resuelve.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
