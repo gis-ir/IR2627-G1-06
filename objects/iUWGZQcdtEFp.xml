@@ -12,11 +12,33 @@
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá asegurar que las operaciones habituales (buscar cliente, añadir línea al TPV, consultar aforo, listar reservas) deberán responder en 2 s o menos en la mayoria de los casos con carga normal.]]></markdownProperty>
-    <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">tbd</enumProperty>
+    <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
     <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">tbd</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
-    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency"/>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
+      <trace target="iY3EqFRNRcTN" traceType=":Proteus-dependency"/>
+      <trace target="MR4mictbPjWL" traceType=":Proteus-dependency"/>
+      <trace target="i4XwvLbcx6fy" traceType=":Proteus-dependency"/>
+      <trace target="HzEPysAhPFER" traceType=":Proteus-dependency"/>
+      <trace target="EtiFP6QE6DgL" traceType=":Proteus-dependency"/>
+      <trace target="H33DPPs8aoTR" traceType=":Proteus-dependency"/>
+      <trace target="bAmBptWvwN8m" traceType=":Proteus-dependency"/>
+      <trace target="MuqzhkHW7YjL" traceType=":Proteus-dependency"/>
+      <trace target="gfcoZaddFQGM" traceType=":Proteus-dependency"/>
+      <trace target="DdbKhC3sSNtT" traceType=":Proteus-dependency"/>
+      <trace target="JsoCPx6UVxLn" traceType=":Proteus-dependency"/>
+      <trace target="2rNX2KBDSiHa" traceType=":Proteus-dependency"/>
+      <trace target="7wguJpL5U9rm" traceType=":Proteus-dependency"/>
+      <trace target="TZ97ycl5P1sr" traceType=":Proteus-dependency"/>
+      <trace target="rSG1dDyrg0wQ" traceType=":Proteus-dependency"/>
+      <trace target="uX4HqQMF5BWE" traceType=":Proteus-dependency"/>
+      <trace target="nRorfRFOOKLu" traceType=":Proteus-dependency"/>
+      <trace target="4Zmyb9yDM2GX" traceType=":Proteus-dependency"/>
+      <trace target="dy0RUGoMZm9s" traceType=":Proteus-dependency"/>
+      <trace target="r2tae0boiuV0" traceType=":Proteus-dependency"/>
+      <trace target="gxeOo2NWb8LM" traceType=":Proteus-dependency"/>
+    </traceProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>
