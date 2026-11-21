@@ -2,63 +2,77 @@
 <object id="NtnUzmwYLduq" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
-    <dateProperty name=":Proteus-date" category="general">2026-11-04</dateProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="text" category="detail"><![CDATA[**Pantalla Principal / Landing (Pública):**
-Vista inicial que recibe a los usuarios de la aplicación. Presenta una interfaz simplificada con dos botones principales y diferenciados: uno para el **PORTAL DE CLIENTES**, que invita a los usuarios a dejar una reseña o sugerencia, y otro para el **ÁREA DE PERSONAL**, que sirve de acceso al portal interno de administración.
+    <markdownProperty name="text" category="detail"><![CDATA[Los datos que aparecen en las pantallas (nombres, importes, fechas, aforos) son ficticios y solo sirven para ilustrar el diseño de cada interfaz.
 
-**Inicio de Sesión (Staff):**
-Pantalla de autenticación que permite a los empleados acceder a la plataforma mediante sus credenciales. Incluye el logotipo, campos para **Usuario o correo** (ej. `ejemplo@gmail.com`) y **Contraseña**, un botón azul destacado para **Iniciar sesión** y un enlace de recuperación de cuenta para garantizar un acceso seguro al sistema.
+## 1. Acceso Público y Autenticación
 
-**Doble Factor (Staff):**
-Módulo de verificación adicional para reforzar la seguridad del inicio de sesión del personal. Tras ingresar credenciales válidas, el usuario debe confirmar su identidad mediante un código enviado por correo o SMS, evitando accesos no autorizados incluso si las contraseñas son comprometidas.
 
-**Panel de Recepción (Staff):**
-El panel principal al que acceden los recepcionistas tras autenticarse. Proporciona una vista rápida de indicadores en tiempo real. Incluye el menú de navegación lateral completo.
+* **Pantalla Principal / Bienvenida (Pública):** Vista inicial de acceso abierto que presenta dos tarjetas de consulta sin registro (`Consultar Catálogo de Productos` y `Buzón de Sugerencias y Reseñas`) y un botón principal `Iniciar sesión` dirigido a socios con cuota activa y personal del centro.
+* **Consulta del Catálogo de Productos (Público / Cliente):** Vista informativa accesible tanto sin iniciar sesión como desde el portal del socio que muestra en tiempo real los productos físicos disponibles en recepción (suplementación, accesorios y bebidas), indicando precio con IVA, referencia y estado de stock (`En stock`, `Últimas uds` o `Sin stock temporal`). Incluye buscador, filtros por categoría, ordenación, paginación y un aviso para que los socios inicien sesión si desean reservar artículos o canjear Puntos Club.
+* **Buzón de Sugerencias y Reseñas (Público / Cliente):** Formulario accesible con o sin inicio de sesión donde cualquier usuario puede elegir el tipo de envío (`Reseña / Valoración` con puntuación de 1 a 5 estrellas, `Sugerencia` o `Queja / Aviso`) y redactar un comentario de hasta 500 caracteres. Permite enviarlo de forma 100 % anónima o dejando nombre/alias y correo electrónico para recibir respuesta, mostrando además la valoración media del centro y opiniones recientes verificadas.
+* **Inicio de Sesión (Cliente y Staff / Admin):** Pantalla unificada de autenticación que incorpora un selector superior para alternar entre `Cliente` y `Staff / Admin`, solicitando correo electrónico o usuario y contraseña, junto con las opciones de recordar sesión y recuperar contraseña. En el acceso de clientes valida que el socio cuente con una cuota activa para acceder a su portal.
+* **Verificación en Dos Pasos / Doble Factor (Staff):** Pantalla de seguridad adicional obligatoria tras validar las credenciales del personal (Recepción, Entrenador o Administración). Muestra la cuenta staff identificada, seis casillas para introducir el código OTP temporal generado por una app autenticadora, temporizador de caducidad, opción de reenvío, enlace a códigos de respaldo y casilla para confiar en el terminal del centro durante 30 días.
 
-**Buzón de Sugerencias y Reseñas:**
-Formulario público donde los clientes o el público general pueden enviar mensajes de forma anónima o identificada. Permite seleccionar el tipo de mensaje (Sugerencia, Opinión, Queja/Incidencia), un campo de comentario libre, y un checkbox para el envío anónimo junto a una línea para dejar Nombre y Apellidos.
 
-**Punto de Venta (Cobro Presencial):**
-Interfaz de cobro para recepción. Permite buscar y añadir productos o suscripciones a un carrito de compra para procesar un pago presencial, seleccionando el método de pago (tarjeta, efectivo).
+---
 
-**Listado de Ventas:**
-Panel administrativo que centraliza el registro histórico de todas las ventas y cobros procesados en el sistema. Permite filtrar y buscar por fecha, empleado vendedor, método de pago y tipo de producto o servicio vendido.
 
-**Ver Listado de Socios:**
-Panel administrativo que centraliza el registro de todos los socios del gimnasio. Muestra información en formato tabla: ID de Socio, Nombre, Apellidos, DNI, Email, Teléfono, Tipo de Plan de Membresía Actual y Estado (Activo/Inactivo/Impagado).
+## 2. Portal del Cliente
 
-**Ficha / Perfil Completo del Socio:**
-Vista detallada para un socio específico que muestra toda su información personal, histórico de membresías, histórico de ventas y estado de suscripción. Incluye botones de acción para **Editar Perfil**, **Renovar Membresía**, **Ver Historial**, o **Dar de Baja**.
 
-**Formulario para Alta de Socio:**
-Interfaz para registrar nuevos socios en el sistema. Recoge datos personales, información de contacto, DNI, y permite seleccionar el plan de membresía inicial, definiendo fechas y método de pago.
+* **Portal del Cliente / Resumen del Portal (Dashboard):** Panel privado principal del socio autenticado que muestra su estado de membresía activa, el indicador de aforo en tiempo real, su próxima reserva confirmada, accesos rápidos a reservas y catálogo, y una tabla con sus próximas reservas activas con opción de cancelación.
+* **Consulta de Aforo Online (Cliente):** Vista dedicada dentro del portal del socio que representa gráficamente en tiempo real el porcentaje y número exacto de personas dentro del gimnasio frente a la capacidad máxima (120 personas), indicando el nivel de ocupación y las plazas disponibles en directo.
+* **Gestión de Reservas (Cliente):** Interfaz del portal del socio que permite seleccionar fecha y filtrar espacios o clases (`Zona Tatami`, `Racks Fuerza`, `Clases Dirigidas`). Valida automáticamente el aforo disponible, detecta solapamientos horarios con otras reservas del usuario, muestra el importe a abonar en mostrador para recursos de pago y permite confirmar o cancelar reservas activas.
 
-**Membresías / Planes de Suscripción:**
-Módulo para la administración de los diferentes planes de membresía ofrecidos (ej: Mensual, Anual, Estudiante). Los responsables pueden crear, editar y dar de baja planes, gestionando precios, duraciones y beneficios asociados.
 
-**Aforo / Registro de Aforo:**
-Sección dedicada al seguimiento y control de la capacidad en tiempo real. Muestra el número actual de personas en las instalaciones y mantiene un registro cronológico de las últimas entradas y salidas registradas.
+---
 
-**Inventario de Productos:**
-Módulo para la gestión del inventario de productos físicos (bebidas, suplementos, merchandising). Permite a los responsables planificar pedidos, registrar entradas de stock, actualizar precios y generar reportes de inventario.
 
-**Registro de Nuevo Producto:**
-Formulario para añadir nuevos productos al inventario del sistema. Recoge datos del producto, características técnicas, precio y asignación inicial de stock operativo.
+## 3. Área Operativa de Staff (Recepción y Sala)
 
-**Alertas:**
-Módulo para que los recepcionistas y personal de sala comuniquen incidencias o alertas en tiempo real sobre las instalaciones (ej: limpieza necesaria en una zona, maquinaria averiada, aforo excesivo). Las alertas quedan registradas.
 
-**Ver Listado de Usuarios (Admin):**
-Panel administrativo con todos los usuarios registrados en el sistema. Permite a los administradores buscar, filtrar y asignar roles específicos (ej: Administrador, Recepcionista, Entrenador Personal).
+* **Panel de Recepción (Dashboard Staff):** Vista operativa principal del personal de recepción con indicadores en tiempo real (aforo en sala, caja diaria del TPV y alertas pendientes), cuatro accesos directos (`Registrar Nuevo Socio`, `Registrar Acceso Sala`, `Consultar Inventario`, `Comunicar Incidencia`), tabla de últimos movimientos de entrada/salida y listado de reservas próximas del día con cobro rápido en TPV.
+* **Punto de Venta / TPV (Cobro Presencial):** Interfaz de cobro en mostrador que permite añadir al ticket productos físicos, cuotas de membresía y reservas pendientes de pago, asociar opcionalmente la ficha de un socio, calcular el desglose de base imponible e IVA y registrar el cobro presencial mediante tarjeta o efectivo.
+* **Listado de Ventas:** Registro histórico centralizado de todas las operaciones y tickets emitidos en el TPV, con indicadores de facturación, desglose por método de pago y filtros por texto, rango de fechas, empleado vendedor, método de pago y tipo de operación (`Mixto`, `Membresía`, `Producto`, `Reserva`).
+* **Monitorización de Sala, Aforo y Rutinas:** Panel de control en vivo que muestra la ocupación total y desglosada por zonas (`Zona Musculación`, `Zona Tatami`, `Zona Baile`), el estado libre u ocupado de racks y tarimas, y el listado de socios actualmente en sala con botón para consultar o asignar su rutina de entrenamiento y registrar su salida.
+* **Listado de Socios:** Directorio general de clientes con métricas de retención y vencimientos, buscador, filtros por estado (`Activo`, `Por vencer`, `Vencido`, `Inactivo`) y tipo de plan, exportación a CSV y acciones directas para ver su ficha, renovar, cobrar o reactivar.
+* **Ficha / Perfil Completo del Socio:** Vista detallada de un socio con sus datos personales, estado de acceso, credencial vinculada (pulsera RFID y pase QR digital), métricas de asistencia y facturación, zonas habilitadas en torno, rutina asignada, notas internas de recepción y pestañas para consultar accesos, cuotas, compras TPV y documentación. Incluye acciones para editar datos, renovar o cambiar de plan y registrar acceso a sala.
+* **Formulario de Alta de Nuevo Socio (Modal):** Ventana modal para registrar nuevos clientes recogiendo sus datos personales (nombre, DNI/NIE/pasaporte, móvil, email y fecha de nacimiento), seleccionando su plan o pack inicial, vinculando su pulsera RFID y configurando el cobro inicial en TPV y el envío del pase QR por correo.
+* **Renovar o Cambiar Plan del Socio (Modal):** Ventana modal accesible desde la ficha o listado de socios que permite cambiar de tarifa o renovar el plan actual, definir la fecha de entrada en vigor (inmediata o al vencer el ciclo vigente), seleccionar el método de pago en recepción, registrar el cobro en TPV y enviar el justificante por email.
+* **Membresías y Planes de Suscripción:** Módulo de gestión de tarifas que diferencia entre planes de suscripción periódicos o familiares y packs prepago de sesiones, mostrando métricas de socios activos e ingresos mensuales equivalentes, zonas incluidas y opciones de edición.
+* **Creación de Nuevo Plan o Pack (Modal):** Formulario modal para dar de alta nuevas tarifas configurando el tipo (`Plan de Suscripción` o `Pack de Sesiones`), modalidad de pago, precio con IVA, duración o número de personas, zonas de acceso incluidas y disponibilidad en TPV y catálogo.
+* **Inventario de Productos:** Panel de control de stock físico que muestra la valoración económica del inventario, artículos con stock bajo o agotados, filtros por categoría y estado, menú de opciones rápidas (`Editar producto y precio`, `Descatalogar producto`) y acceso directo a reposición de unidades.
+* **Alta de Nuevo Producto (Modal):** Formulario modal para registrar artículos en el inventario definiendo nombre, categoría, código SKU, código de barras, proveedor habitual, coste sin IVA, tipo de IVA, PVP con cálculo automático de margen bruto, stock inicial, umbral mínimo de aviso, ubicación en expositor y reglas de sincronización con el TPV.
+* **Editar Producto y Precio (Modal):** Ventana modal para modificar los datos comerciales, proveedor, costes, margen bruto, umbral de stock mínimo, ubicación y estado del artículo en el punto de venta (`ACTIVO` o `DESCATALOGADO`).
+* **Entrada Rápida / Ajuste de Stock (Modal):** Ventana modal para registrar entradas de mercancía de proveedor (con coste unitario, número de albarán/factura y fecha) o ajustes manuales por rotura, caducidad o recuento, permitiendo reactivar automáticamente el producto en el TPV y cerrar su alerta de reposición.
+* **Alertas e Incidencias:** Módulo unificado de supervisión que agrupa las incidencias operativas reportadas en sala (averías de equipamiento, desperfectos o limpieza) y las alertas automáticas de stock bajo o agotado generadas por el sistema, permitiendo filtrarlas, reportar nuevas incidencias o reponer stock directamente.
+* **Atender / Gestionar Incidencia (Modal):** Ventana modal para actualizar el estado de una incidencia a `En proceso` o `Resuelta`, registrar el empleado responsable, documentar las actuaciones realizadas y activar un aviso visible en recepción cuando una máquina queda fuera de servicio.
 
-**Página de Perfil:**
-Espacio donde cada usuario del personal puede visualizar su información personal, rol dentro del sistema y correo electrónico. Además, cuenta con la opción de acceder a la edición de sus datos.
 
-**Editar el Perfil:**
-Sección que permite modificar la información personal del usuario autenticado, como nombre, correo electrónico o imagen de perfil, manteniendo los datos actualizados.]]></markdownProperty>
+---
+
+
+## 4. Área de Dirección y Administración
+
+
+* **Dashboard de Dirección / Panel de Administrador:** Vista ejecutiva principal para el rol Administrador con indicadores globales del centro (ingresos mensuales desglosados en cuotas y TPV, socios con cuota activa, ocupación y reservas del día, alertas abiertas), tabla de actividad reciente, personal en turno actual y valoración media de satisfacción.
+* **Gestión de Usuarios y Staff:** Panel administrativo para controlar las cuentas del personal del centro, mostrando indicadores de cuentas activas y desactivadas, rol asignado (`Administrador` o `Empleado`), módulos habilitados, estado de conexión y último acceso.
+* **Alta de Nuevo Usuario / Empleado (Modal):** Formulario modal para crear cuentas de personal introduciendo datos identificativos, correo corporativo y contraseña temporal, asignando su `RolEmpleado` y configurando los permisos de acceso sobre los 8 módulos del sistema.
+* **Editar Usuario / Empleado (Modal):** Ventana modal para actualizar los datos del empleado, restablecer su contraseña, activar o desactivar la cuenta, modificar su rol y permisos por módulo o cerrar sus sesiones activas.
+* **Recursos y Espacios:** Módulo administrativo para gestionar las zonas del gimnasio, tarimas de peso muerto y racks de competición, visualizando su aforo, equipamiento, modalidad de reserva, estado operativo y configuración de `Horarios Base`.
+* **Nuevo Recurso o Espacio (Modal):** Formulario modal para dar de alta zonas o puestos reservables (`Zona / Sala`, `Tarima Peso Muerto`, `Rack Powerlifting`), estableciendo código interno, ubicación, aforo máximo, franja de reserva, estado inicial, tarifa por turno o inclusión en cuota y equipamiento.
+* **Editar Recurso (Modal):** Ventana modal para modificar los parámetros operativos, aforo, tarifa por turno, estado (`Disponible`, `En Uso`, `Inactivo / Fuera de servicio`) o notas de mantenimiento de un recurso existente, además de permitir su eliminación.
+* **Reseñas y Valoraciones (Supervisión Operativa):** Vista interna de Dirección para analizar la puntuación media y distribución de estrellas, filtrar opiniones por categoría o valoración, publicar u ocultar reseñas en la web, exportar informes y responder a los socios.
+* **Responder a Reseña (Modal):** Ventana modal que muestra la valoración original del socio y permite redactar una respuesta oficial firmada por Dirección utilizando plantillas rápidas (`Disculpa mantenimiento`, `Agradecimiento 5★`, `Cita recepción`), guardar borradores o publicarla directamente.
+
+
+---
+
+]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

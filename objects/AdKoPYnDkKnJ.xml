@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="AdKoPYnDkKnJ" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[IMPORTE TOTAL]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Moneda (Obligatorio). Coste calculado de la reserva (0 si es gratuita).]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

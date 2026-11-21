@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="4wfqrwwgaUb5" classes="use-case-action system-action" acceptedChildren=":Proteus-none" acceptedParents="use-case-exception">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Acción del sistema]]></stringProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[detiene el proceso y avisa de que el recurso ya no tiene disponibilidad en ese horario.]]></markdownProperty>
+    <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

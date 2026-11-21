@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="dUBpWQLPeCZy" classes="software-requirement business-rule" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[REGN-]]></prefix>
+      <number>027</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Puntuación de las reseñas]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="description" category="detail"><![CDATA[El atributo puntuacion de una reseña (Reseña) debe informarse, con un número entero entre 1 y 5, cuando su categoría es RESENA_VALORACION, y no puede informarse en el resto de categorías: las sugerencias y las quejas no llevan puntuación. El atributo valoracion, que contiene el mensaje, es siempre obligatorio.]]></markdownProperty>
+    <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">medium</enumProperty>
+    <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
+      <trace target="3c5fuKJhxKyT" traceType=":Proteus-dependency"/>
+      <trace target="EtiFP6QE6DgL" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="DuANuDnMUY9L" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[MÉTODO DE CREDENCIAL]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Valores fijos {Pulsera RFID, Pase QR} (Obligatorio). Tipo de credencial presentada en el torno.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

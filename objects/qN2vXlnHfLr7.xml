@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="qN2vXlnHfLr7" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="text" category="detail"><![CDATA[**Gestionar catálogo de productos**
+
+El Personal/Staff accede a la administración del catálogo y elige entre crear un producto, editar uno existente o retirarlo. Tras indicar sus datos comerciales, su precio de venta y su coste, su stock mínimo y su estado, el sistema comprueba que los datos obligatorios estén completos y que el precio sea coherente antes de guardarlos.
+
+Operaciones del sistema:
+
+* **guardarProducto(datos):** crea un producto o actualiza uno existente. Precondición: todos los datos obligatorios están indicados, el precio de venta es mayor que cero y no existe otro producto con el mismo código. Postcondición: el producto queda guardado y, si está activo, disponible en el TPV.
+* **retirarProducto(codigoProducto):** retira un producto del catálogo. Precondición: existe un producto con ese código. Postcondición: el producto pasa a estado descatalogado y deja de poder venderse, pero no se elimina.]]></markdownProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

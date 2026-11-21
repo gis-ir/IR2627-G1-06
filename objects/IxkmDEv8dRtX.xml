@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="IxkmDEv8dRtX" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[ID RESERVA]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Referencia a ID_Reserva (Opcional). Reserva cobrada, si la línea corresponde a una reserva.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

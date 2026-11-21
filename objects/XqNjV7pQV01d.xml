@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="XqNjV7pQV01d" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[DOBLE FACTOR ACTIVO]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Booleano (Obligatorio). Indica si la cuenta tiene configurada la verificación en dos pasos.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="tB9QtRHQ2oI7" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[CONTRASEÑA]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Cadena de texto cifrada (Opcional). Clave de acceso al Portal del Cliente; es obligatoria si el cliente accede al portal.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

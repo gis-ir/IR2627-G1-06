@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="CZofmNwnrq95" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[ZONA]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Cadena de texto (Obligatorio). Zona de las instalaciones a la que se accede (por ejemplo, "Zona Musculación" o "Zona Tatami").]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

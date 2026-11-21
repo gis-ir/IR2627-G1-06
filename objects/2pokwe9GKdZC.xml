@@ -40,7 +40,76 @@ Conocer el funcionamiento del gimnasio, los tipos de clientes con los que trabaj
 **Acuerdos**
 
 - Miguel Ángel será el contacto con el negocio y transmitirá las necesidades y preocupaciones del dueño.
-- Miguel Ángel facilitará fotografías de las instalaciones y del personal para documentar el proyecto.]]></markdownProperty>
+- Miguel Ángel facilitará fotografías de las instalaciones y del personal para documentar el proyecto.
+
+
+**ACT-002 Reunión sobre diseño de interfaces**
+
+**Fecha:** [24/10/2026]
+
+**Lugar:** Online.
+
+**Asistentes:**
+
+- Miguel Ángel Gil Granado, representante del cliente.
+- Pablo Vallejo Pino
+- Ismael Escánez García
+- Jose Del Amor González
+
+**Objetivo de la reunión**
+
+Presentar los primeros bocetos de las interfaces de usuario del sistema para validar su usabilidad.
+
+**Temas tratados**
+
+- Discusión sobre el flujo de trabajo del personal del gimnasio (Staff) durante su jornada.
+
+**Necesidades detectadas**
+
+- La interfaz del TPV debe ser muy ágil para no generar colas en recepción.
+- El personal requiere una herramienta rápida en su panel principal para reportar tareas internas (averías de máquinas, necesidades de limpieza, mantenimiento) sin tener que usar aplicaciones externas.
+
+**Acuerdos**
+
+- Se aprueba el diseño visual y la distribución propuesta para el panel principal y el catálogo.
+- El equipo de desarrollo se compromete a diseñar un módulo integrado de alertas e incidencias en tiempo real para el uso del Staff.
+
+
+
+**ACT-003 Reunión de validación de nuevas funcionalidades**
+
+**Fecha:** [07/11/2026]
+
+**Lugar:** Online.
+
+**Asistentes:**
+
+- Manuel Benítez Alfonso, propietario.
+- Miguel Ángel Gil Granado, representante del cliente.
+- Pablo Vallejo Pino
+
+**Objetivo de la reunión**
+
+Proponer al cliente nuevas funcionalidades de valor añadido surgidas tras el diseño de interfaces y validar su incorporación al alcance del proyecto.
+
+**Temas tratados**
+
+- Propuesta de creación de un Portal del Cliente accesible vía web.
+- Inclusión de un sistema de consulta de aforo online en tiempo real.
+- Presentación de un módulo de reserva de recursos limitados (espacio en tatami, clases, racks de competición y tarimas).
+- Revisión del nuevo módulo de incidencias para el Staff acordado en la reunión anterior.
+
+**Necesidades detectadas**
+
+- Los clientes demandan poder saber si el gimnasio está muy lleno antes de salir de casa.
+- Es necesario evitar conflictos en sala por el uso de equipamiento muy demandado garantizando turnos de reserva.
+- El acceso a estas ventajas online debe estar condicionado a que el cliente tenga sus pagos al día.
+
+**Acuerdos**
+
+- El cliente (propietario y representante) acepta la propuesta del Portal Web y el sistema de reservas.
+- Se aprueba oficialmente la inclusión de las alertas e incidencias internas para el equipo de trabajo.
+- Se da luz verde a la actualización de los requisitos del sistema para reflejar estas nuevas incorporaciones.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

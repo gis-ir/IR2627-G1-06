@@ -2,19 +2,20 @@
 <object id="cUmZvRKEIlgY" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
-    <dateProperty name=":Proteus-date" category="general">2026-11-05</dateProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="text" category="detail"><![CDATA[**Estado de la cuota del cliente**
 
-El atributo estadoCuota de la clase Cliente determina si el cliente puede acceder a las instalaciones:
+El atributo estado de la clase Suscripcion determina si el cliente puede acceder a las instalaciones. El atributo derivado estadoCuota de la clase Cliente toma el valor de su suscripción más reciente:
 
-* **Activa:** el cliente tiene la cuota pagada y en vigor. Es el estado en el que queda al darse de alta con el pago de su cuota.
-* **Impagada:** ha vencido el periodo de la cuota y el cliente todavía no la ha pagado. Si se registra el pago, vuelve a estar activa.
-* **Caducada:** ha finalizado el plazo de pago sin que el cliente abone la cuota. Vuelve a estar activa cuando se registra el pago de una nueva cuota.
+* **Activa:** la suscripción está en vigor. Es el estado en el que queda al cobrarse el plan o el pack en el TPV.
+* **Por vencer:** la suscripción sigue en vigor, pero faltan 7 días o menos para su fecha de vencimiento. El cliente conserva el acceso a las instalaciones.
+* **Vencida:** ha llegado la fecha de vencimiento (o se han agotado las sesiones de un pack) sin que se haya renovado. Vuelve a estar activa cuando se registra el cobro de una nueva suscripción.
+* **Inactiva:** el centro ha dado de baja al socio. Vuelve a estar activa si se reactiva al socio y se cobra una nueva suscripción.
 
-Mientras la cuota no está activa, el sistema deniega el paso por el torno y registra el fichaje como no autorizado.]]></markdownProperty>
+Mientras la cuota está vencida o inactiva, el sistema deniega el paso por el torno y registra el fichaje como no autorizado.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

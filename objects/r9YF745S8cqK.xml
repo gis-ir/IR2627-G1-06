@@ -2,8 +2,8 @@
 <object id="r9YF745S8cqK" classes="business-requirement business-process" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[PRON-]]></prefix>
-      <number>007</number>
+      <prefix><![CDATA[PNI-]]></prefix>
+      <number>001</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Consulta remota del catálogo de productos 
@@ -17,7 +17,7 @@
 · El cliente consulta características, precios y stock disponible de los productos.
 
 · Fin: Consulta del catálogo completada para planificación de compra presencial.]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[007.svg]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[PNI-001.svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">medium</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>

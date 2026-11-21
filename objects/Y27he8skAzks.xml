@@ -2,8 +2,8 @@
 <object id="Y27he8skAzks" classes="business-requirement business-process" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[PRON-]]></prefix>
-      <number>010</number>
+      <prefix><![CDATA[PNI-]]></prefix>
+      <number>004</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Gestión y tramitación de reposiciones de almacén]]></stringProperty>
@@ -25,7 +25,7 @@ con el proveedor correspondiente.
 · Fin: Reposición de almacén completada e inventario actualizado.
 
 ]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[PNI-004.svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>

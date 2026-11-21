@@ -3,7 +3,7 @@
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Paso del sistema]]></stringProperty>
     <markdownProperty name="condition" category="general" tooltip="step-condition"><![CDATA[]]></markdownProperty>
-    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[almacena la información y confirma el resultado de la operación.]]></markdownProperty>
+    <markdownProperty name="description" category="general" tooltip="system-action-description"><![CDATA[almacena la información y, si el alta incluye un plan o pack, remite el cobro inicial al caso de uso «Renovar o cambiar el plan de un socio», que registra el pago y activa la suscripción; confirma el resultado de la operación.]]></markdownProperty>
     <stringProperty name="performance" category="general" tooltip="performance"><![CDATA[]]></stringProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

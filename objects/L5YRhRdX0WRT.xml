@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="L5YRhRdX0WRT" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[CREDENCIAL]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[Cadena de texto (Opcional). Código de la pulsera RFID vinculada al cliente (por ejemplo, "Pulsera #PSG-0842").]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

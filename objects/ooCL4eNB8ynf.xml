@@ -2,23 +2,591 @@
 <object id="ooCL4eNB8ynf" classes="traceable-object paragraph" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-document section" selectedCategory="detail">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Párrafo]]></stringProperty>
-    <dateProperty name=":Proteus-date" category="general">2026-11-05</dateProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-11-18</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="text" category="detail"><![CDATA[**Enumerados**
+    <markdownProperty name="text" category="detail"><![CDATA[**Cliente**
+
+Representa a cada persona que mantiene una relación con el gimnasio, tanto si contrata un plan de suscripción o un pack de sesiones como si solo compra productos. El tipo de servicio al que accede se deduce del plan que tiene en vigor. Procede del requisito de información *Información de Clientes*.
+
+&nbsp;
+
+**Atributos:**
+
+- codigoSocio (número entero, obligatorio, único): identificador del cliente.
+
+- dni (texto de 9 caracteres, obligatorio, único): documento de identidad.
+
+- nombre (texto, obligatorio): nombre de pila.
+
+- apellidos (texto, obligatorio): apellidos completos.
+
+- telefono (texto de 9 dígitos, obligatorio): teléfono de contacto.
+
+- email (texto, opcional): correo electrónico de contacto. Es obligatorio junto con contrasena si el cliente dispone de acceso al portal web.
+
+- contrasena (texto cifrado, opcional): clave de acceso del cliente al portal web.
+
+- fechaNacimiento (fecha, obligatorio): fecha de nacimiento del cliente.
+
+- credencialPulsera (texto, opcional): código de la pulsera RFID vinculada al cliente, por ejemplo "Pulsera #PSG-0842".
+
+- paseQrActivo (booleano, obligatorio): es verdadero cuando el cliente dispone de un pase QR vigente para el torno.
+
+- notasRecepcion (texto, opcional): anotaciones internas del personal sobre el cliente.
+
+- fechaRegistro (fecha, obligatorio): fecha de alta en el centro.
+
+- /estadoCuota (EstadoCuota, derivado): es el estado de la suscripción más reciente del cliente.
+
+- /enSala (booleano, derivado): es verdadero cuando el último fichaje autorizado del cliente es de entrada.
+
+&nbsp;
+
+**Asociaciones:**
+
+- realiza Fichaje (0..*): fichajes del cliente en el torno.
+
+- escribe Reseña (0..*): reseñas que ha enviado de forma identificada.
+
+- tieneAsignada Rutina (0..*): rutinas de entrenamiento proporcionadas por el gimnasio. Se conserva el historial, aunque solo una puede estar activa.
+
+- Venta correspondeA Cliente (0..*): ventas realizadas al cliente.
+
+- realiza Reserva (0..*): reservas efectuadas por el cliente en el portal web.
+
+- contrata Suscripcion (0..*): suscripciones, pasadas y vigentes, que ha contratado el cliente.
+
+&nbsp;
+
+**PlanMembresia**
+
+Representa cada tarifa que el gimnasio ofrece a sus clientes, ya sea un plan de suscripción periódico o un pack de sesiones de prepago. Procede del requisito de información *Información de Planes de Membresía*.
+
+&nbsp;
+
+**Atributos:**
+
+- nombre (texto, obligatorio): nombre del plan o pack tal y como se muestra en el TPV.
+
+- tipo (TipoTarifa, obligatorio): indica si es un plan de suscripción o un pack de sesiones.
+
+- modalidadPago (ModalidadPago, obligatorio): forma en la que se cobra la tarifa.
+
+- precio (moneda, obligatorio): precio de la tarifa con el IVA general (21 %) incluido.
+
+- duracionMeses (número entero positivo, opcional): duración de los planes periódicos.
+
+- numSesiones (número entero positivo, opcional): sesiones incluidas en un pack, por ejemplo 1, 5 o 10.
+
+- numPersonas (número entero positivo, opcional): personas que cubre un plan familiar.
+
+- zonasIncluidas (texto, obligatorio): zonas de las instalaciones a las que da acceso la tarifa.
+
+- beneficios (texto, opcional): ventajas adicionales que incluye la tarifa.
+
+- disponibleTPV (booleano, obligatorio): es verdadero cuando la tarifa puede cobrarse desde el punto de venta.
+
+- activa (booleano, obligatorio): es falso cuando el plan se ha dado de baja y ya no puede contratarse.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Suscripcion correspondeA PlanMembresia (0..*): suscripciones que se han contratado con este plan.
+
+&nbsp;
+
+**Suscripcion**
+
+Representa cada contratación de un plan o de un pack por parte de un cliente durante un periodo concreto. El conjunto de suscripciones de un cliente forma su historial de cuotas. Procede del requisito de información *Información de Suscripciones*.
+
+&nbsp;
+
+**Atributos:**
+
+- fechaInicio (fecha, obligatorio): día en el que entra en vigor la suscripción.
+
+- fechaVencimiento (fecha, obligatorio): día en el que vence la suscripción.
+
+- sesionesRestantes (número entero, opcional): sesiones que le quedan al cliente en un pack de sesiones.
+
+- estado (EstadoCuota, obligatorio): situación de la cuota (Activa, Por vencer, Vencida o Inactiva).
+
+&nbsp;
+
+**Asociaciones:**
+
+- Cliente contrata Suscripcion (1): cliente que ha contratado la suscripción.
+
+- correspondeA PlanMembresia (1): plan o pack contratado.
+
+- LineaVenta correspondeA Suscripcion (0..*): líneas de venta en las que se ha cobrado la suscripción.
+
+&nbsp;
+
+**Fichaje**
+
+Representa cada lectura de una credencial en el torno de acceso, tanto si se permite el paso como si se deniega. Procede del requisito de información *Histórico de Accesos*.
+
+&nbsp;
+
+**Atributos:**
+
+- lectura (texto, obligatorio): código leído por el torno.
+
+- fechaHora (fecha y hora, obligatorio): instante de la lectura.
+
+- movimiento (TipoMovimiento, obligatorio): indica si es una entrada o una salida.
+
+- autorizado (booleano, obligatorio): indica si se ha permitido el paso.
+
+- causaDenegacion (texto, opcional): motivo del bloqueo, por ejemplo cuota vencida, cuota inactiva o aforo completo. Solo existe cuando autorizado es falso.
+
+- zonaAcceso (texto, obligatorio): zona de las instalaciones a la que se accede, por ejemplo "Zona Musculación" o "Zona Tatami".
+
+- metodoCredencial (texto, obligatorio): tipo de credencial presentada, pulsera RFID o pase QR.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Cliente realiza Fichaje (1): cliente al que corresponde la credencial leída.
+
+&nbsp;
+
+**Rutina**
+
+Representa la rutina de entrenamiento que el personal del gimnasio elabora y asigna a un cliente. Permite saber qué usuarios presentes en sala disponen de una rutina proporcionada por el centro. Procede del requisito de información *Información de Rutina de Entrenamiento*.
+
+&nbsp;
+
+**Atributos:**
+
+- codigoRutina (número entero, obligatorio, único): identificador de la rutina.
+
+- nombreRutina (texto, obligatorio): nombre de la rutina.
+
+- descripcionRutina (texto, obligatorio): breve descripción del plan (ej. "Hipertrofia 4 días").
+
+- fechaAsignacion (fecha, obligatorio): día en el que se entregó la rutina al cliente.
+
+- estado (EstadoRutina, obligatorio): vigencia de la rutina actual.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Cliente tieneAsignada Rutina (1): cliente al que pertenece.
+
+- Empleado elabora Rutina (1): empleado que la ha confeccionado o asignado.
+
+&nbsp;
+
+**Empleado**
+
+Representa la cuenta de usuario de cada miembro del personal del gimnasio, incluido el administrador, con la que accede al sistema. Procede del requisito de información *Cuentas de Usuario* e *Información Permisos de Usuario*.
+
+&nbsp;
+
+**Atributos:**
+
+- nombre (texto, obligatorio): nombre de pila del empleado.
+
+- apellidos (texto, obligatorio): apellidos del empleado.
+
+- dni (texto de 9 caracteres, obligatorio, único): documento de identidad del empleado.
+
+- nombreUsuario (texto, obligatorio, único): nombre de usuario o correo corporativo.
+
+- contrasena (texto cifrado, obligatorio): clave de acceso del empleado.
+
+- cargo (texto, obligatorio): puesto del empleado en el gimnasio, por ejemplo "Director General", "Recepcionista" o "Monitor".
+
+- rol (RolEmpleado, obligatorio): perfil principal de acceso.
+
+- permisos (conjunto de Modulo, obligatorio): módulos del sistema a los que tiene acceso.
+
+- cuentaActiva (booleano, obligatorio): es falso cuando la cuenta está bloqueada o desactivada.
+
+- ultimoAcceso (fecha y hora, opcional): momento del último inicio de sesión.
+
+- enLinea (booleano, obligatorio): es verdadero cuando el empleado tiene una sesión abierta.
+
+- dobleFactorActivo (booleano, obligatorio): es verdadero cuando la cuenta tiene configurada la verificación en dos pasos.
+
+&nbsp;
+
+**Asociaciones:**
+
+- registra Venta (0..*): ventas que ha cobrado en el TPV.
+
+- elabora Rutina (0..*): rutinas que ha elaborado.
+
+- reporta Incidencia (0..*): averías o alertas creadas por el empleado.
+
+- resuelve Incidencia (0..*): incidencias asignadas o resueltas por el empleado.
+
+- responde Reseña (0..*): reseñas a las que ha respondido en nombre de la Dirección.
+
+- realiza MovimientoStock (0..*): entradas y ajustes de stock que ha registrado.
+
+&nbsp;
+
+**Venta**
+
+Representa cada cobro realizado en el TPV de la recepción, ya sea de productos, de planes de suscripción o de reservas. Procede del requisito de información *Información de Venta*.
+
+&nbsp;
+
+**Atributos:**
+
+- numeroTicket (texto con formato numérico secuencial, obligatorio, único): identificador de la venta.
+
+- fechaHora (fecha y hora, obligatorio): momento del cobro.
+
+- metodoPago (MetodoPago, obligatorio): forma de pago utilizada.
+
+- /importeTotal (moneda, derivado): importe final cobrado con IVA incluido. Se calcula como la suma de unidades por importeUnitario de todas sus líneas.
+
+- /baseImponible (moneda, derivado): suma de las bases imponibles de sus líneas.
+
+- /cuotaIva (moneda, derivado): suma de las cuotas de IVA de sus líneas.
+
+&nbsp;
+
+**Asociaciones:**
+
+- correspondeA Cliente (0..1): cliente al que se le ha vendido. No existe en las ventas al público general.
+
+- Empleado registra Venta (1): empleado que ha cobrado la venta.
+
+- contiene LineaVenta (1..*): productos, suscripciones o reservas incluidos en la venta. Es una composición: las líneas no existen sin su venta.
+
+&nbsp;
+
+**LineaVenta**
+
+Representa el desglose de cada producto, suscripción o reserva incluido en una venta. Procede del requisito de información *Información línea de venta*.
+
+&nbsp;
+
+**Atributos:**
+
+- unidades (número entero positivo, obligatorio): unidades vendidas.
+
+- importeUnitario (moneda, obligatorio): precio unitario, con IVA incluido, registrado en el instante del cobro.
+
+- concepto (texto, obligatorio): descripción de la línea tal y como aparece en el ticket.
+
+- /baseImponible (moneda, derivado): importe de la línea sin IVA. Se obtiene descontando el IVA aplicable a unidades por importeUnitario: el iva del producto o, en planes y reservas, el general del 21 %.
+
+- /cuotaIva (moneda, derivado): IVA incluido en el importe de la línea.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Venta contiene LineaVenta (1): venta a la que pertenece.
+
+- correspondeA Producto (0..1): producto vendido, si la línea corresponde a un producto.
+
+- correspondeA Suscripcion (0..1): suscripción cobrada, si la línea corresponde a un plan o pack.
+
+- correspondeA Reserva (0..1): reserva cobrada, si la línea corresponde a una reserva.
+
+Estas tres asociaciones son excluyentes ({xor}): cada línea corresponde a un único concepto.
+
+&nbsp;
+
+**Producto**
+
+Representa cada artículo del catálogo comercial que se vende en la recepción. Las tarifas de acceso al gimnasio no son productos: se describen en la clase PlanMembresia. Procede del requisito de información *Información de Productos*.
+
+&nbsp;
+
+**Atributos:**
+
+- codigoProducto (número entero o código, obligatorio, único): identificador del artículo.
+
+- nombre (texto, obligatorio): nombre público del producto.
+
+- categoria (CategoriaProducto, obligatorio): clasificación del artículo.
+
+- pvp (moneda, obligatorio): precio de venta al público, con el IVA incluido.
+
+- iva (porcentaje, obligatorio): tipo impositivo aplicable, que permite desglosar la base imponible del pvp.
+
+- costeUnitario (moneda, opcional): coste de compra del producto sin IVA, necesario para calcular el margen bruto.
+
+- stockActual (número entero, obligatorio): unidades disponibles en recepción.
+
+- stockMinimo (número entero, obligatorio): umbral de unidades para generar alertas de reposición.
+
+- estado (EstadoProducto, obligatorio): disponibilidad comercial del producto (Activo, Descatalogado).
+
+- codigoBarras (texto, opcional): código EAN-13 del producto.
+
+- proveedor (texto, opcional): proveedor habitual del producto.
+
+- ubicacionExpositor (texto, opcional): lugar de la recepción donde se expone el producto.
+
+- ocultarSinStock (booleano, obligatorio): es verdadero cuando el producto deja de mostrarse en el TPV y en el catálogo al agotarse.
+
+&nbsp;
+
+**Asociaciones:**
+
+- LineaVenta correspondeA Producto (0..*): líneas de venta en las que aparece.
+
+- AlertaReposicion alertaDe Producto (0..*): alertas generadas para este producto.
+
+- registraMovimiento MovimientoStock (0..*): entradas y ajustes de stock del producto.
+
+&nbsp;
+
+**MovimientoStock**
+
+Representa cada entrada de mercancía de un proveedor y cada ajuste manual del stock de un producto, de modo que se pueda saber de dónde procede cada variación. Procede del requisito de información *Información de Movimientos de Stock*.
+
+&nbsp;
+
+**Atributos:**
+
+- tipo (TipoMovimientoStock, obligatorio): indica si es una entrada de proveedor o un ajuste manual.
+
+- cantidad (número entero, obligatorio): unidades que se suman o se restan al stock.
+
+- costeUnitarioCompra (moneda, opcional): coste por unidad, sin IVA, en las entradas de proveedor.
+
+- numeroAlbaran (texto, opcional): albarán o factura del proveedor que acompaña a la entrada.
+
+- fechaHora (fecha y hora, obligatorio): momento en el que se registra el movimiento.
+
+- motivo (texto, opcional): causa del ajuste, por ejemplo rotura, caducidad o recuento.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Producto registraMovimiento MovimientoStock (1): producto cuyo stock se modifica.
+
+- Empleado realiza MovimientoStock (1): empleado que registra el movimiento.
+
+&nbsp;
+
+**AlertaReposicion**
+
+Representa cada aviso automático generado cuando un producto alcanza su stock mínimo. Procede del requisito de información *Información de Alertas de Reposición*.
+
+&nbsp;
+
+**Atributos:**
+
+- fechaEmision (fecha y hora, obligatorio): instante exacto en el que el sistema detectó el stock mínimo.
+
+- stockRegistrado (número entero, obligatorio): unidades que quedaban al saltar la alerta.
+
+- estado (EstadoAlertaReposicion, obligatorio): situación de la alerta (Pendiente, Pedido Tramitado, Resuelta).
+
+&nbsp;
+
+**Asociaciones:**
+
+- alertaDe Producto (1): artículo que requiere reposición.
+
+&nbsp;
+
+**Reseña**
+
+Representa cada opinión, queja o sugerencia que un cliente envía al gimnasio a través del portal, de forma identificada o anónima, así como la respuesta que da la Dirección. Procede del requisito de información *Reseñas*.
+
+&nbsp;
+
+**Atributos:**
+
+- categoria (CategoriaResena, obligatorio): clasificación de la reseña.
+
+- valoracion (texto libre, obligatorio): contenido del mensaje.
+
+- puntuacion (número entero entre 1 y 5, opcional): estrellas otorgadas. Es obligatoria en las reseñas o valoraciones y no se indica en las sugerencias ni en las quejas.
+
+- fechaHora (fecha y hora, obligatorio): momento en el que se recibe.
+
+- nombreOpcional (texto, opcional): nombre o firma introducida si el remitente no quiso ser totalmente anónimo pero tampoco vincular su cuenta.
+
+- emailContacto (texto, opcional): correo de contacto del remitente, para poder responderle.
+
+- publicadaEnWeb (booleano, obligatorio): es verdadero cuando la reseña se muestra públicamente en la web.
+
+- respuestaDireccion (texto, opcional): respuesta oficial publicada por la Dirección.
+
+- fechaRespuesta (fecha y hora, opcional): momento en el que se publica la respuesta.
+
+- borradorRespuesta (texto, opcional): respuesta guardada pero todavía sin publicar.
+
+- /esAnonima (booleano, derivado): verdadero si no tiene nombreOpcional ni asociación con Cliente.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Cliente escribe Reseña (0..1): cliente registrado que la ha enviado. No existe cuando el envío es anónimo.
+
+- Empleado responde Reseña (0..1): administrador que ha publicado la respuesta de la Dirección.
+
+&nbsp;
+
+**RecursoReservable**
+
+Representa los espacios compartidos (tatami, clases) o equipamiento exclusivo (racks, tarimas) que los clientes pueden reservar. Procede del requisito de información *Información de Recurso Reservable*.
+
+&nbsp;
+
+**Atributos:**
+
+- codigoRecurso (texto, obligatorio, único): código interno del recurso, por ejemplo "ZONA-MUSC-01".
+
+- nombre (texto, obligatorio): nombre del espacio o equipamiento.
+
+- tipo (TipoRecurso, obligatorio): naturaleza del recurso.
+
+- ubicacion (texto, obligatorio): lugar de las instalaciones donde se encuentra el recurso.
+
+- aforoMaximo (número entero positivo, obligatorio): límite de personas que pueden reservar simultáneamente.
+
+- duracionTurnoMinutos (número entero positivo, opcional): duración de cada franja reservable.
+
+- precioHora (moneda, opcional): coste por hora si el recurso es de pago.
+
+- equipamiento (texto, opcional): material que incluye el recurso.
+
+- notasMantenimiento (texto, opcional): anotaciones sobre el estado o el mantenimiento del recurso.
+
+- estado (EstadoRecurso, obligatorio): disponibilidad del recurso.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Reserva asignadaA RecursoReservable (0..*): historial de reservas asociadas a este recurso.
+
+- Incidencia afectaA RecursoReservable (0..*): incidencias que han afectado a este recurso.
+
+&nbsp;
+
+**Reserva**
+
+Representa las reservas efectuadas por los clientes desde el portal. Procede del requisito de información *Información de Reserva*.
+
+&nbsp;
+
+**Atributos:**
+
+- codigoReserva (texto, obligatorio, único): código visible de la reserva, por ejemplo "#RES-1096".
+
+- fecha (fecha, obligatorio): día para el que se realiza la reserva.
+
+- horaInicio (hora, obligatorio): instante de comienzo del bloque.
+
+- horaFin (hora, obligatorio): instante de finalización del bloque.
+
+- /importeTotal (moneda, derivado): coste calculado según las horas reservadas y el precioHora del recurso (0 € si no tiene tarifa).
+
+- pagada (booleano, obligatorio): es verdadero cuando el importe de la reserva ya se ha cobrado.
+
+- estado (EstadoReserva, obligatorio): situación actual de la reserva.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Cliente realiza Reserva (1): cliente titular de la reserva.
+
+- Reserva asignadaA RecursoReservable (1): espacio o equipamiento reservado.
+
+- LineaVenta correspondeA Reserva (0..*): líneas de venta en las que se ha cobrado la reserva.
+
+&nbsp;
+
+**Incidencia**
+
+Representa los avisos de averías, limpieza o mantenimiento reportados por el personal para su seguimiento interno. Procede del requisito de información *Información de Incidencias y Mantenimiento*.
+
+&nbsp;
+
+**Atributos:**
+
+- tipo (TipoIncidencia, obligatorio): categoría del problema.
+
+- zona (texto, obligatorio): zona de las instalaciones donde se produce, por ejemplo "Zona Cardio" o "Vestuario Masculino".
+
+- tituloEquipo (texto, opcional): equipo o elemento afectado, por ejemplo "Cinta de correr #04".
+
+- descripcion (texto, obligatorio): explicación detallada de la avería o necesidad.
+
+- fechaReporte (fecha y hora, obligatorio): instante en que se registró.
+
+- estado (EstadoIncidencia, obligatorio): situación de la tarea (Pendiente, En proceso, Resuelta).
+
+- notasSeguimiento (texto, opcional): actuaciones realizadas por el empleado que atiende la incidencia.
+
+- avisoFueraServicio (booleano, obligatorio): es verdadero cuando el equipo afectado está fuera de servicio y debe avisarse en recepción.
+
+- fechaResolucion (fecha y hora, opcional): momento en el que se resuelve la incidencia.
+
+&nbsp;
+
+**Asociaciones:**
+
+- Empleado reporta Incidencia (1): trabajador que da de alta el aviso.
+
+- Empleado resuelve Incidencia (0..1): trabajador que se encarga de solucionarla.
+
+- afectaA RecursoReservable (0..1): recurso reservable afectado por la incidencia, si lo hay. Cuando es una avería, el recurso pasa a estar inactivo hasta que se resuelva.
+
+&nbsp;
+
+**Enumerados**
 
 Los atributos con un conjunto fijo de valores se definen mediante los siguientes tipos enumerados:
 
-* **TipoPerfil:** INSTALACIONES, ENTRENAMIENTO_PERSONAL, EXTERNO. Tipo de servicio principal del cliente.
-* **EstadoCuota:** ACTIVA, IMPAGADA, CADUCADA. Situación del pago de la cuota del cliente.
-* **CategoriaProducto:** NUTRICION, SUPLEMENTACION, ACCESORIOS, CUOTA_SUSCRIPCION. Clasificación de los productos del catálogo.
-* **MetodoPago:** EFECTIVO, TARJETA. Forma de pago de una venta.
-* **TipoMovimiento:** ENTRADA, SALIDA. Dirección del paso por el torno.
-* **CategoriaResena:** SUGERENCIA, QUEJA, VALORACION_GENERAL. Clasificación de las reseñas.
-* **RolEmpleado:** STAFF, ADMINISTRADOR. Perfil principal de acceso de un empleado.
-* **Modulo:** CLIENTES, TPV, INVENTARIO, AFORO, CONFIGURACION. Módulos del sistema sobre los que se conceden permisos.
-* **EstadoPeticion:** PENDIENTE, APROBADA, COMPLETADA. Situación de una petición de reposición.]]></markdownProperty>
+- **EstadoCuota**: ACTIVA, POR_VENCER, VENCIDA, INACTIVA. Situación de la cuota de una suscripción.
+
+- **TipoTarifa**: PLAN_SUSCRIPCION, PACK_SESIONES. Clase de tarifa del gimnasio.
+
+- **ModalidadPago**: MENSUAL, PAGO_UNICO, FAMILIAR, BONO_PREPAGO. Forma en la que se cobra una tarifa.
+
+- **CategoriaProducto**: SUPLEMENTOS, BEBIDAS, ACCESORIOS. Clasificación de los productos del catálogo.
+
+- **EstadoProducto**: ACTIVO, DESCATALOGADO. Disponibilidad comercial.
+
+- **TipoMovimientoStock**: ENTRADA_PROVEEDOR, AJUSTE_MANUAL. Origen de la variación del stock de un producto.
+
+- **MetodoPago**: EFECTIVO, TARJETA, TRANSFERENCIA_BIZUM. Forma de pago de una venta.
+
+- **TipoMovimiento**: ENTRADA, SALIDA. Dirección del paso por el torno.
+
+- **CategoriaResena**: RESENA_VALORACION, SUGERENCIA, QUEJA_INCIDENCIA. Clasificación de las reseñas.
+
+- **RolEmpleado**: STAFF, ADMINISTRADOR. Perfil principal de acceso de un empleado.
+
+- **Modulo**: DASHBOARD_DIRECCION, GESTION_USUARIOS, RECURSOS_ESPACIOS, TARIFAS_PLANES, TPV_VENTAS, GESTION_SOCIOS, INVENTARIO_STOCK, ALERTAS_INCIDENCIAS. Módulos del sistema sobre los que se conceden permisos.
+
+- **EstadoAlertaReposicion**: PENDIENTE, PEDIDO_TRAMITADO, RESUELTA. Situación de una alerta de stock.
+
+- **EstadoRutina**: ACTIVA, FINALIZADA. Vigencia de la rutina.
+
+- **TipoRecurso**: ZONA_SALA, TARIMA_PESO_MUERTO, RACK_POWERLIFTING, CLASE_DIRIGIDA. Naturaleza del recurso reservable.
+
+- **EstadoRecurso**: DISPONIBLE, EN_USO, INACTIVO. Disponibilidad operativa del recurso.
+
+- **EstadoReserva**: PENDIENTE_PAGO, CONFIRMADA, CANCELADA, DISFRUTADA. Situación de la reserva.
+
+- **TipoIncidencia**: AVERIA_EQUIPAMIENTO, LIMPIEZA, DESPERFECTO_INSTALACION, OTRO. Categoría del problema interno.
+
+- **EstadoIncidencia**: PENDIENTE, EN_PROCESO, RESUELTA. Estado de la alerta o tarea de mantenimiento.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

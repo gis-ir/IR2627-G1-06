@@ -2,8 +2,8 @@
 <object id="7bEKrH8U38Gm" classes="business-requirement business-process" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[PRON-]]></prefix>
-      <number>009</number>
+      <prefix><![CDATA[PNI-]]></prefix>
+      <number>003</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Evaluación de stock mínimo y alerta de reposición]]></stringProperty>
@@ -21,7 +21,7 @@
 
 
 ]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[PNI-003.svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">medium</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
