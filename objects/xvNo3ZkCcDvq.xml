@@ -6,25 +6,25 @@
       <number>009</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
-    <stringProperty name=":Proteus-name" category="general"><![CDATA[Reserva de espacio/actividad]]></stringProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Reserva de espacio o actividad]]></stringProperty>
     <dateProperty name=":Proteus-date" category="general">2026-11-13</dateProperty>
     <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[· Inicio: El cliente accede a la sección de reservas.
+    <markdownProperty name="description" category="detail"><![CDATA[· Inicio: El cliente desea reservar un espacio o una actividad.
 
 · El cliente selecciona el recurso, la fecha y la franja horaria deseada.
 
- · El cliente confirma la disponibilidad.
+ · El cliente comprueba la disponibilidad.
 
-· Si no está disponible, el cliente selecciona otra fecha o franja horaria.
+· Si no está disponible, el cliente decide si desea probar con otro recurso, fecha u hora; si no le encaja ninguna opción, abandona el proceso sin realizar la reserva.
 
-· Si está disponible, el cliente abona el coste si el espacio lo requiere.
+· Si está disponible, el cliente confirma la reserva.
 
-· Independientemente de si necesita abonar coste o no, el cliente confirma la reserva.
+· Si el recurso reservado requiere abono, el cliente deberá abonar el coste en recepción.
 
  · Fin: Reserva de recurso confirmada y registrada.]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[PNI-009.svg]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[009 (1).svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>

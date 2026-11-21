@@ -13,20 +13,22 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[· Inicio: Un socio solicita renovar su plan o cambiarlo por otro.
 
-· El personal consulta la suscripción vigente del socio.
+· El cliente indica el plan deseado y el método con el que quiere pagar (efectivo o tarjeta).
+
+· El personal del gimnasio consulta la suscripción vigente del socio.
 
 · El personal selecciona el nuevo plan o pack y la fecha en la que entra en vigor.
 
-· El personal cobra el importe en el TPV con el método de pago elegido por el cliente.
+· El cliente abona el importe con el método de pago elegido.
 
-· Si el pago es rechazado, se reintenta o se elige otro método de pago.
+· El personal procesa el cobro.
 
-· El sistema registra la nueva suscripción y actualiza el estado de la cuota.
+· Si el pago es rechazado, se reintenta (y si es necesario se elige otro método de pago).
 
-· El personal entrega o envía por correo el justificante de pago.
+· El personal actualiza la suscripción y entrega el justificante de pago (físico o por correo).
 
 · Fin: Suscripción renovada o modificada y cobro registrado.]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[011 (2).svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>

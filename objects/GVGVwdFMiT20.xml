@@ -13,20 +13,22 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[· Inicio: Una persona acude a recepción para hacerse socia del gimnasio.
 
-· El personal de recepción registra sus datos personales y de contacto.
+· Solicita el alta y facilita los datos y el plan deseado.
 
-· Si el DNI/NIE ya está registrado, el personal recupera la ficha existente en lugar de crear una nueva.
+· El personal del gimnasio comprueba si el DNI/NIE está ya registrado.
+
+· Si el DNI/NIE ya está registrado, el personal recupera la ficha existente en lugar de crear una nueva. En caso contrario, registra los datos personales y de contacto del nuevo cliente.
 
 · El personal asigna al cliente un plan de suscripción o un pack de sesiones.
 
 · El personal vincula la credencial de acceso del cliente (pulsera RFID o pase QR).
 
-· El personal cobra el plan elegido en el TPV.
+· El cliente abona el importe del plan elegido.
 
-· El sistema activa la suscripción del cliente.
+· El personal registra el cobro y activa la suscripción.
 
 · Fin: Cliente dado de alta con una suscripción en vigor.]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[010 (1).svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
