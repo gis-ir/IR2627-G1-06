@@ -13,13 +13,11 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[· Inicio: El cliente acude a recepción a solicitar la compra de productos.
 
-· El personal de recepción busca los productos solicitados por el cliente para comprobar el stock disponible.
+· El personal del gimnasio busca los productos solicitados por el cliente para comprobar el stock disponible.
 
 · Si no hay stock suficiente, el personal informa al cliente y finaliza el proceso sin venta.
 
-· Si hay existencias disponibles, el personal de recepción procesa el cobro y registra la venta.
-
-· Se actualiza automáticamente el stock descontando las unidades vendidas.
+· Si hay existencias disponibles, el cliente abona el importe de la compra y el personal de recepción procesa el cobro y registra la venta.
 
 · El personal entrega los artículos y el ticket de compra.
 
