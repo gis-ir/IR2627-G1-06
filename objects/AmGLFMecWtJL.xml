@@ -15,8 +15,9 @@
     <traceProperty name="participates-in" category="detail" acceptedTargets="business-process" traceType=":Proteus-dependency">
       <trace target="r9YF745S8cqK" traceType=":Proteus-dependency"/>
       <trace target="uEUL8XeL96rw" traceType=":Proteus-dependency"/>
+      <trace target="d3SgdJ6sNcWc" traceType=":Proteus-dependency"/>
     </traceProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[Comprador externo sin servicio contratado en el gimnasio que accede a la plataforma exclusivamente en modo lectura para consultar los productos y existencias disponibles en tiempo real y poder planificar su compra presencial en recepción.
+    <markdownProperty name="description" category="detail"><![CDATA[Comprador externo sin servicio contratado en el gimnasio que accede a la plataforma exclusivamente en modo lectura para consultar los productos y existencias disponibles en tiempo real y poder planificar su compra presencial en recepción, así como para enviar reseñas, quejas o sugerencias a través del buzón público.
 
 ]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>

@@ -13,8 +13,9 @@
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <traceProperty name="participates-in" category="detail" acceptedTargets="business-process" traceType=":Proteus-dependency">
-      <trace target="7bEKrH8U38Gm" traceType=":Proteus-dependency"/>
-      <trace target="d3SgdJ6sNcWc" traceType=":Proteus-dependency"/>
+      <trace target="Y27he8skAzks" traceType=":Proteus-dependency"/>
+      <trace target="q7EfNj4igpbg" traceType=":Proteus-dependency"/>
+      <trace target="xv7RL3MixKQv" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Responsable de la gestión global del negocio. Se encarga de la supervisión de ventas y facturación, aprobación y gestión de las alertas de reposición de inventario, mantenimiento del catálogo de productos, de los planes de suscripción y packs de sesiones y de los recursos reservables, gestión de las cuentas y permisos del personal, control del aforo e informes de uso de sala, así como de la revisión y respuesta de las valoraciones y sugerencias recibidas.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
