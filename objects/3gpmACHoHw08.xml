@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[Solo un empleado con rol ADMINISTRADOR puede responder a una reseña (Reseña). Mientras la respuesta no se publique, su texto se conserva como borradorRespuesta; al publicarla, el sistema registra la respuestaDireccion, su fechaRespuesta y el empleado que la firma. Una reseña solo se muestra en la web cuando publicadaEnWeb es verdadero.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">medium</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
       <trace target="3c5fuKJhxKyT" traceType=":Proteus-dependency"/>

@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[Toda entrada de mercancía de un proveedor y todo ajuste manual de stock generarán un movimiento (MovimientoStock) con su tipo, su cantidad, su fecha y el empleado que lo realiza, y actualizarán el stockActual del producto (Producto) sin dejarlo nunca en negativo. El número de albarán y el coste unitario de compra solo se registran en las entradas de proveedor.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
       <trace target="BTGwJyq5Tm89" traceType=":Proteus-dependency"/>

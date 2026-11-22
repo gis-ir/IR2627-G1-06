@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá permitir crear, modificar y dar de baja los planes de suscripción y los packs de sesiones, indicando su precio, su duración o número de sesiones y las zonas de acceso que incluyen, y renovarlos o cambiarlos a cada socio registrando su cobro.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement general-requirement" traceType=":Proteus-dependency">
       <trace target="4KJTuEKKyk5q" traceType=":Proteus-dependency"/>
