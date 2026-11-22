@@ -9,7 +9,7 @@
     <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[DIAGRAMA 6.png]]></fileProperty>
     <urlProperty name="url" category="detail"><![CDATA[]]></urlProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">50</integerProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[Este diagrama representa el acceso de los socios al portal web para consultar el aforo en tiempo real y gestionar sus reservas, la consulta pública del catálogo online y la administración de recursos reservables. ]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Este diagrama representa el registro, el seguimiento y la resolución de las incidencias de las instalaciones y de las alertas de reposición por parte del personal y del administrador.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
