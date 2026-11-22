@@ -8,7 +8,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[DIAGRAMA DE ARQUITECTURA DEL SISTEMA.jpg]]></fileProperty>
     <urlProperty name="url" category="detail"><![CDATA[]]></urlProperty>
-    <integerProperty name="width" category="detail" tooltip="width-info">80</integerProperty>
+    <integerProperty name="width" category="detail" tooltip="width-info">95</integerProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Arquitectura lógica en tres capas del sistema de gestión de Pure Sport Gym, con sus subsistemas y los sistemas externos con los que se integra.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>

@@ -8,7 +8,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <fileProperty name="file" category="detail" tooltip="file-info"><![CDATA[DS REGISTRAR ACCESO DE USUARIO.png]]></fileProperty>
     <urlProperty name="url" category="detail"><![CDATA[]]></urlProperty>
-    <integerProperty name="width" category="detail" tooltip="width-info">60</integerProperty>
+    <integerProperty name="width" category="detail" tooltip="width-info">59</integerProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Diagrama de secuencia del caso de uso Registrar acceso de usuario.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
