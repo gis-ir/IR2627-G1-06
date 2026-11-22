@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá exigir al personal del gimnasio, además de sus credenciales, un código de verificación de un solo uso para poder iniciar sesión.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement general-requirement" traceType=":Proteus-dependency">
       <trace target="m4WHXv8ZfGaC" traceType=":Proteus-dependency"/>

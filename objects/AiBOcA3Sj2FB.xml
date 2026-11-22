@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[El estadoCuota de una suscripción (Suscripcion) será ACTIVA mientras esté en vigor y pasará a POR_VENCER cuando falten 7 días o menos para su fechaVencimiento. Si llega esa fecha sin renovarse, pasará a VENCIDA. El estado INACTIVA se aplicará cuando el centro dé de baja al socio. El cliente conserva el acceso a las instalaciones mientras su cuota esté ACTIVA o POR_VENCER; el estadoCuota del cliente es el de su suscripción más reciente.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">high</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
       <trace target="gCY2ctNrBHOm" traceType=":Proteus-dependency"/>

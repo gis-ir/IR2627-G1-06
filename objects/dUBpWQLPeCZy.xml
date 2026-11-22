@@ -14,7 +14,7 @@
     <markdownProperty name="description" category="detail"><![CDATA[El atributo puntuacion de una reseña (Reseña) debe informarse, con un número entero entre 1 y 5, cuando su categoría es RESENA_VALORACION, y no puede informarse en el resto de categorías: las sugerencias y las quejas no llevan puntuación. El atributo valoracion, que contiene el mensaje, es siempre obligatorio.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">medium</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">tbd</enumProperty>
-    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">draft</enumProperty>
+    <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">awaiting-validation</enumProperty>
     <enumProperty name="stability" category="priority" tooltip="stability" choices="tbd low medium high">tbd</enumProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
       <trace target="3c5fuKJhxKyT" traceType=":Proteus-dependency"/>
