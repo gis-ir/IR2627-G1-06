@@ -15,7 +15,7 @@
 
 · El personal realiza y registra el ajuste indicando la cantidad y el motivo.
 
-· Si existía una alerta de reposición pendiente y el stock queda igual o por encima del mínimo, el personal elimina la alerta de reposición del producto.
+· Si existía una alerta de reposición pendiente y el stock queda igual o por encima del mínimo, el personal cierra la alerta de reposición del producto.
 
 · Si no existía alerta pendiente y el stock queda por debajo del mínimo, el personal emite una alerta de reposición.
 

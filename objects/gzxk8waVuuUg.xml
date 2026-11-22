@@ -18,6 +18,8 @@
       <trace target="d3SgdJ6sNcWc" traceType=":Proteus-dependency"/>
       <trace target="GWGkDm4RFQnL" traceType=":Proteus-dependency"/>
       <trace target="xvNo3ZkCcDvq" traceType=":Proteus-dependency"/>
+      <trace target="GVGVwdFMiT20" traceType=":Proteus-dependency"/>
+      <trace target="2QejVjFIK0GR" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Cliente con un plan de suscripción o un pack de sesiones contratado en el gimnasio (tanto si usa las instalaciones como si solo contrata entrenamiento personalizado). Accede a la plataforma para consultar la disponibilidad del catálogo de productos fitness en tiempo real antes de la compra presencial, verificar el servicio que tiene contratado y enviar reseñas o sugerencias (de forma identificada o anónima).
 Puede iniciar sesión en un portal web (validando su estado de cuota) para reservar recursos y consultar el aforo.

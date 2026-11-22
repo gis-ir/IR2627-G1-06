@@ -13,7 +13,7 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[· Inicio: Un socio solicita renovar su plan o cambiarlo por otro.
 
-· El cliente indica el plan deseado y el método con el que quiere pagar (efectivo o tarjeta).
+· El cliente indica el plan deseado y el método con el que quiere pagar (efectivo, tarjeta o transferencia/Bizum).
 
 · El personal del gimnasio consulta la suscripción vigente del socio.
 

@@ -14,8 +14,10 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <traceProperty name="participates-in" category="detail" acceptedTargets="business-process" traceType=":Proteus-dependency">
       <trace target="uEUL8XeL96rw" traceType=":Proteus-dependency"/>
-      <trace target="7bEKrH8U38Gm" traceType=":Proteus-dependency"/>
-      <trace target="7FL8hAcMduVD" traceType=":Proteus-dependency"/>
+      <trace target="GVGVwdFMiT20" traceType=":Proteus-dependency"/>
+      <trace target="2QejVjFIK0GR" traceType=":Proteus-dependency"/>
+      <trace target="hkh2hSSKXrFo" traceType=":Proteus-dependency"/>
+      <trace target="fyBWseB5hiGl" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Plantilla de 4 trabajadores que operan diariamente el sistema. Realizan el alta de socios y la gestión de sus planes, el mantenimiento del catálogo de productos y de los planes y packs (junto al administrador), el registro de ventas presenciales de productos y cuotas en TPV con descuento automático de stock, registran las entradas de mercancía y los ajustes de stock, generan solicitudes internas de reposición de mercancía, comunican y atienden las incidencias de las instalaciones, registran la entrada/salida de usuarios en la interfaz de acceso y asignan bloques de rutinas personalizadas a los socios.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
