@@ -13,7 +13,6 @@
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <traceProperty name="inherits-from" category="detail" acceptedTargets="system-actor" traceType=":Proteus-dependency"/>
     <traceProperty name="participates-in" category="detail" acceptedTargets="use-case" traceType=":Proteus-dependency">
-      <trace target="2rNX2KBDSiHa" traceType=":Proteus-dependency"/>
       <trace target="EtiFP6QE6DgL" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Este actor representa a una persona sin cuenta en el portal que accede al sistema sin iniciar sesión. Solo puede consultar el catálogo de productos y enviar reseñas o sugerencias, de forma anónima o con sus datos de contacto.]]></markdownProperty>

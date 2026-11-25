@@ -19,9 +19,7 @@
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement" traceType=":Proteus-dependency">
       <trace target="BLvj5mKB59Wx" traceType=":Proteus-dependency"/>
       <trace target="jhEm4fTFAqwM" traceType=":Proteus-dependency"/>
-      <trace target="2rNX2KBDSiHa" traceType=":Proteus-dependency"/>
       <trace target="gfcoZaddFQGM" traceType=":Proteus-dependency"/>
-      <trace target="DdbKhC3sSNtT" traceType=":Proteus-dependency"/>
       <trace target="SPcWSwREj4Tp" traceType=":Proteus-dependency"/>
       <trace target="KZS83yQUVqtd" traceType=":Proteus-dependency"/>
     </traceProperty>

@@ -15,8 +15,6 @@
     <traceProperty name="participates-in" category="detail" acceptedTargets="use-case" traceType=":Proteus-dependency">
       <trace target="gfcoZaddFQGM" traceType=":Proteus-dependency"/>
       <trace target="JsoCPx6UVxLn" traceType=":Proteus-dependency"/>
-      <trace target="DdbKhC3sSNtT" traceType=":Proteus-dependency"/>
-      <trace target="2rNX2KBDSiHa" traceType=":Proteus-dependency"/>
       <trace target="EtiFP6QE6DgL" traceType=":Proteus-dependency"/>
     </traceProperty>
     <markdownProperty name="description" category="detail"><![CDATA[Este actor representa un usuario del gimnasio que interactúa con el sistema para el acceso al portal online, para lo que necesita una suscripción en vigor. Puede consultar la ocupación de la instalación en tiempo real, gestionar de forma sus reservas de clases y consultar el catálogo de productos y enviar reseñas o sugerencias de forma identificada o anónima. ]]></markdownProperty>
